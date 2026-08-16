@@ -5,7 +5,7 @@ An experimental work-in-progress port of [Grimdoomer’s Xbox360BadUpdate](https
 This is an unofficial side project made for research and learning. It is not affiliated with or supported by Grimdoomer.
 
 > [!WARNING]
-> This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it's just gonna freeze up.
+> This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it's just gonna freeze up. **THIS IS AI ASSISTED!!!**
 
 ## Current Progress
 
