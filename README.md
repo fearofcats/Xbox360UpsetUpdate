@@ -1,4 +1,4 @@
-# Xbox360BadUpdate 17526 Port
+# Xbox360BadUpdate 1.2 17526 Port
 
 An experimental work-in-progress port of [Grimdoomer’s Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**.
 
