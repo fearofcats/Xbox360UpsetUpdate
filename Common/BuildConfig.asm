@@ -31,7 +31,7 @@
 ###########################################################
 # Include kernel config for specified platform.
 .ifdef RETAIL_BUILD
-    .include "KernelConfig_Retail_17559.asm"
+    .include "KernelConfig_Retail_17526.asm"
 .else
     .include "KernelConfig_Debug.asm"
 .endif
