@@ -1,72 +1,8 @@
-![banner](https://github.com/user-attachments/assets/e9684c9d-d4db-48a8-9661-53629c20e22e)
-
-Bad Update is a non-persistent software only hypervisor exploit for Xbox 360 that works on the latest (17559) software version. This repository contains the exploit files that can be used on an Xbox 360 console to run unsigned code. This exploit can be triggered using one of the following games:
-- **Deprecated** ~~Tony Hawk's American Wasteland (NTSC/PAL/RF see [here](https://github.com/grimdoomer/Xbox360BadUpdate/wiki/Tony-Hawk's-American-Wasteland#compatible-versions) for how to identify your version/region)~~
+Bad Update is a non-persistent software only hypervisor exploit for Xbox 360 that works on the latest (17559) software version, this upsets me, because it leaves my 17526 Xbox 360 leftout. This repository contains the exploit files that can be used on an Xbox 360 console with the dashboard of 17526 to run unsigned code. This exploit can be triggered using the following game:
 - Rock Band Blitz (trial or full game, see [here](https://github.com/grimdoomer/Xbox360BadUpdate/wiki/Rock-Band-Blitz) for more information)
 
 **This exploit is NOT persistent!** This means your console will only be in a hacked state (able to run homebrew/unsigned code) for as long as it's kept on. **Once you reboot or power off your console you'll need to run the exploit again**. The exploit cannot be made persistent.
 
-**Your Xbox 360 console must be on dashboard version 17559 in order to use this exploit**. While the exploit can be ported to any system software version I have only built the exploit for the 17559 dashboard version.
+**Your Xbox 360 console must be on dashboard version 17526 in order to use this exploit**. While the exploit can be ported to any system software version (yup thats why you're here) I have only built the exploit for the 17526 dashboard version... if you want the 17559 version go to grimdoomer's repo
 
-[**Not up to date**] For information on how to use the exploit see the Quick Start section below. For information on how the exploit works or how to compile it from scratch see the following wiki pages:
-- [Compiling](https://github.com/grimdoomer/Xbox360BadUpdate/wiki/Compiling)
-- [Exploit Details](https://github.com/grimdoomer/Xbox360BadUpdate/wiki/Exploit-Details)
-
-# Quick Start
-To run the Bad Update exploit you'll need one of the supported games listed above and a USB stick. The following steps give a brief overview of how to run the exploit, for more detailed steps please see the [How To Use](https://github.com/grimdoomer/Xbox360BadUpdate/wiki/How-To-Use) wiki page.
-1. Download the Xbox360BadUpdate-Retail-USB.zip file from the releases section and extract the files.
-2. Format a USB stick to FAT32.
-3. Copy the contents of the folder matching the game you want to use for the exploit to the root of the USB stick.
-    * ~~If you're using Tony Hawk's American Wasteland copy the contents of the Tony Hawk's American Wasteland folder to the root of the USB stick.~~
-    * If you're using Rock Band Blitz copy the contents of the Rock Band Blitz folder to the root of the USB stick.
-    * The root of the USB stick should contain the following files/folders: BadUpdatePayload, Content.
-4. Place the unsigned executable you want to run when the exploit triggers into the BadUpdatePayload folder on the USB stick and name it "default.xex" (replace any existing file in the folder). This xex file must be in retail format and have all restrictions removed (see the wiki for how to do this).
-5. Insert the USB stick into your Xbox 360 console and power it on.
-6. Sign into the Player 1 profile and run the game you're using to trigger the exploit.
-    * If you're using Rock Band Blitz, there is no profile included. You can use any local/offline profile, or run the game completely signed out.
-7. Follow the instructions for the game you chose to load the hacked game save file and begin the exploit process.
-8. The console's ring of light will flash different colors/segments during the exploit process to indicate progress. For information on what the different values mean see the [LED Patterns and Meanings](https://github.com/grimdoomer/Xbox360BadUpdate/wiki/How-To-Use#led-patterns-and-meanings) section of the wiki.
-9. Once the exploit triggers successfully the RoL should be fully lit in green. The hypervisor has now been patched to run unsigned executables and your unsigned default.xex file will be run.
-
-# Boot Animation Recovery Mode
-If you tried to replace the boot animation on your console with a custom/unsigned file you will have found you're now locked out of being able to use BadUpdate. To fix that you can
-use the new recovery mode introduced in v1.3 which will restore your corrupted boot animation with a clean working version. To run the BadUpdate boot animation recovery follow these steps:
-1. Download the Xbox360BadUpdate-Retail-USB.zip file from the releases section and extract the files.
-2. Format a USB stick to FAT32.
-3. Copy the contents of the folder matching the game you want to use for the exploit to the root of the USB stick.
-    * ~~If you're using Tony Hawk's American Wasteland copy the contents of the Tony Hawk's American Wasteland folder to the root of the USB stick.~~
-    * If you're using Rock Band Blitz copy the contents of the Rock Band Blitz folder to the root of the USB stick.
-    * The root of the USB stick should contain the following files/folders: BadUpdatePayload, Content, name.txt.
-4. Insert the USB stick into your Xbox 360 console and power it on.
-5. Launch Rock Band Blitz, when you get to the screen that says "Press A To Start" hold down the Y button and press A (continue holding Y after pressing A).
-6. When the exploit runs it will delete any unsigned/corrupted bootanim.xex files in flash and copy a clean bootanim.xex file in place. This file has already been provided in the BadUpdatePayload folder you don't need to find it yourself.
-7. If the file is copied successfully the console's ring of light will light up all four quadrants in green, and start a 4 second count down timer. Each second that passes one LED quadrant will go out until all 4 quadrants are no longer lit. At this point the console will reboot itself.
-8. If everything worked correctly you should see the boot animation play after the console reboots and your boot animation is now fixed. You can rerun the BadUpdate exploit using the normal instructions.
-
-# Contributing
-Due to continuous spam and lack of moderation controls on GitHub's side I've decided to make this repository read-only. If anyone has any meaningful contributions to make you can contact me directly. Do **NOT** contact me for general support questions or low effort contributions (spelling mistakes, verbiage, etc.), I will not respond and you will be blocked.
-
-# FAQ
-**Q: Why do I have to re-run the exploit every time I turn my console on?**  
-A: The exploit is not-persistent, it only works for as long as the console is kept on. Once the console is turned off or rebooted you'll need to run the exploit again.
-
-**Q: What does this provide over the RGH Hack/should I use this instead of RGH?**  
-A: This is a software only exploit that doesn't require you open your console or perform any soldering to use. Other than that it's inferior to the RGH exploit in every way and should be considered a "proof of concept" and not something you use in place of RGH.
-
-**Q: Can this be turned into a softmod?**  
-A: No, the Xbox 360 boot chain is very secure with no attack surface to try and exploit. There will never exist a software only boot-to-hacked-state exploit akin to a "softmod".
-
-**Q: Does this work on winchester consoles?**  
-A: Yes it has been confirmed to work on winchester consoles.
-
-**Q: Does this work with the Original Xbox version of Tony Hawk's American Wasteland?**  
-A: No, it only works with the Xbox 360 version.
-
-**Q: Can \<insert other skateboarding game here> be used with this?**  
-A: No, the Tony Hawk save game exploit is specific to Tony Hawk's American Wasteland and has nothing to do with it being a skateboarding game.
-
-**Q: Can \<insert other music game here> be used with this?**  
-A: No, the Rock Band save game exploit is specific to Rock Band Blitz and has nothing to do with it being a music game.
-
-**Q: Why does the exploit only run a single unsigned xex?**  
-A: My goal was to hack the hypervisor, not to develop a robust all-in-one homebrew solution. Someone else will need to develop a post-exploit executable that patches in all the quality of life things you would get from something like the RGH exploit.
+and if you want it for any other version, directly contact me-- although, I'll only guide you through, not give you an MakeBadUpdateForYourOwnDashBoardVersion.exe for you, this shit genuinely is making me lose it, and i wont do it again if thats understandable 😭
