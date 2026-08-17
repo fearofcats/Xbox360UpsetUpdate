@@ -15,7 +15,7 @@ This is an unofficial side project made for research and learning. It is not aff
 ## Current Progress
 
 * [x] Created a 17526 kernel configuration
-* [x] Manually verified the kernel entries
+* [x] Kernel gadgets and functions manually verified 
 * [ ] Verify the remaining XAM functions and gadgets
 * [ ] Confirm the 17526 HV system-call ordinals
 * [ ] Update the version-specific Stage 3 values
