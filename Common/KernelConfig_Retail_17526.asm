@@ -1,6 +1,6 @@
 # Ported from BadUpdate 17559 -> 17526
 
-# note to self; DONT FORGET TO FIX GADGETS.ASM !!!!!!!    .long   0x818CB880 <- xam value  FOUND VALUE ->  0x818cae60
+# note to self; MIGHT'VE ACCIDENTALLY SKIPPED SOME KERNEL VALUES, NEED TO CHECK!!!!!!!! 
 
 .set KRNL_VER, 17526
 
