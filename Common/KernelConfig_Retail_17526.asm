@@ -1,6 +1,6 @@
 # Ported from BadUpdate 17559 -> 17526
 
-# note for self : DONT FORGET TO FIX GADGETS.ASM !!!!!!!    .long   0x818CB880 <- xam value
+# note to self; DONT FORGET TO FIX GADGETS.ASM !!!!!!!    .long   0x818CB880 <- xam value  FOUND VALUE ->  0x818cae60
 
 .set KRNL_VER, 17526
 
@@ -47,19 +47,19 @@
 .set BootAnimCodePageAddress,           0x98030000  # UNCHECKED; fixed mapping
 
 # XAM function addresses:
-.set CreateFileA,                            0x8171B398  # UNCHECKED
-.set GetFileSize,                            0x8171BC18  # UNCHECKED
-.set ReadFile,                               0x8171C718  # UNCHECKED
-.set WriteFile,                              0x817216C0  # UNCHECKED
-.set CloseHandle,                            0x8171AE00  # UNCHECKED
-.set CreateThread,                           0x8171B608  # UNCHECKED
-.set ResumeThread,                           0x8171C8F0  # UNCHECKED
-.set GetLastError,                           0x81721118  # UNCHECKED
-.set XamLoaderLaunchTitle,                   0x816A1728  # UNCHECKED
-.set XamLoaderTerminateTitle,                0x816A1360  # UNCHECKED
-.set XLaunchNewImage,                        0x816A1728  # UNCHECKED
-.set XMemCpy,                                0x81721B90  # UNCHECKED
-.set XMemSet,                                0x81721E88  # UNCHECKED
+.set CreateFileA,                            0x8171b3a0  # CHECKED;
+.set GetFileSize,                            0x8171bc20  # CHECKED;
+.set ReadFile,                               0x8171C718  # CHECKED;
+.set WriteFile,                              0x817216C0  # CHECKED;
+.set CloseHandle,                            0x8171AE00  # CHECKED;
+.set CreateThread,                           0x8171b610  # CHECKED;
+.set ResumeThread,                           0x8171C8F0  # CHECKED;
+.set GetLastError,                           0x81720f18  # CHECKED;
+.set XamLoaderLaunchTitle,                   0x816A1728  # CHECKED;
+.set XamLoaderTerminateTitle,                0x816A1360  # CHECKED;
+.set XLaunchNewImage,                        XamLoaderLaunchTitle  # CHECKED;
+.set XMemCpy,                                0x81721B90  # CHECKED;
+.set XMemSet,                                0x81721e88  # CHECKED;
 
 # Aliases for compatibility with BadUpdate source:
 .set memcpy, XMemCpy  # UNCHECKED alias
