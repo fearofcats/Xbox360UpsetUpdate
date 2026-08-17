@@ -42,7 +42,7 @@ Detailed build instructions will be added after the port has been completed and 
 
 This repository contains only my porting work, configuration files, notes, and related scripts.
 
-Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files yourself from software you legally own.
+Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files by yourself. I'll explain how to do so later..
 
 ## Disclaimer
 
