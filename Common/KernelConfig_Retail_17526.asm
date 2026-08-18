@@ -1,7 +1,6 @@
 # Ported from BadUpdate 17559 -> 17526
 
-# note to self; MIGHT'VE ACCIDENTALLY SKIPPED SOME KERNEL VALUES, NEED TO CHECK!!!!!!!! 
-
+# note to self; any of theses could be wrong?
 .set KRNL_VER, 17526
 
 # Kernel function addresses, sorted by original 17559 address.
@@ -33,15 +32,15 @@
 .set HvxKeysExGetKey,                        0x80107C10  # CHECKED; was 0x80108580
 .set memcmp,                                 0x80116870  # CHECKED; was 0x80117200
 
-# System call ordinals (must be verified against the 17526 HV image):
-.set sc_HvxPostOutputExploit,                0x00000000  # UNCHECKED; 17559 value was 0x0D
-.set sc_HvxFlushUserModeTb,                  0x00000000  # UNCHECKED; 17559 value was 0x21
-.set sc_HvxKeysExecute,                      0x00000000  # UNCHECKED; 17559 value was 0x42
-.set sc_HvxEncryptedReserveAllocation,       0x00000000  # UNCHECKED; 17559 value was 0x49
-.set sc_HvxEncryptedEncryptAllocation,       0x00000000  # UNCHECKED; 17559 value was 0x4A
-.set sc_HvxEncryptedReleaseAllocation,       0x00000000  # UNCHECKED; 17559 value was 0x4C
-.set sc_HvxRevokeUpdate,                     0x00000000  # UNCHECKED; 17559 value was 0x65
-.set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb  # UNCHECKED alias
+# System call ordinals (must be verified against the 17526 HV image):  likely unchanged???, I might be hitting a brick wall, but theres little to no change
+.set sc_HvxPostOutputExploit,                0x0D  # UNCHECKED PLACEHOLDER;
+.set sc_HvxFlushUserModeTb,                  0x21  # UNCHECKED PLACEHOLDER; 
+.set sc_HvxKeysExecute,                      0x42  # UNCHECKED PLACEHOLDER; 
+.set sc_HvxEncryptedReserveAllocation,       0x49  # UNCHECKED PLACEHOLDER; 
+.set sc_HvxEncryptedEncryptAllocation,       0x4A  # UNCHECKED PLACEHOLDER; 
+.set sc_HvxEncryptedReleaseAllocation,       0x4C  # UNCHECKED PLACEHOLDER; 
+.set sc_HvxRevokeUpdate,                     0x65  # UNCHECKED PLACEHOLDER; 
+.set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb  # UNCHECKED;
 
 # Boot animation address (fixed   do not change):
 .set BootAnimCodePageAddress,           0x98030000  # UNCHECKED; fixed mapping
@@ -68,30 +67,32 @@
 ###########################################################
 # Kernel gadgets :
 
-.set __restgprlr_24,                         0x800631A0  # checked; unchanged
-.set __restgprlr_26,                         0x80062578  # checked; unchanged
-.set __restgprlr_27,                         0x80061D50  # checked; unchanged
-.set __restgprlr_28,                         0x8006148C  # checked; unchanged
-.set __restgprlr_29,                         0x800619B4  # checked; unchanged
-.set __restgprlr_30,                         0x80061538  # checked; unchanged
-.set __restgprlr_31,                         0x800664B0  # checked; unchanged
-.set stw_r3,                                 0x800d8edc  # checked; was 0x800D986C
-.set mr_r31_to_r3,                           0x800661E4  # checked; unchanged
-.set mr_r31_to_r11,                          0x800c7da0  # checked; was 0x800C8748
-.set call_func_dispatch,                     0x8007a8bc  # checked; was 0x8007B0AC
+.set __restgprlr_24,                         0x800631A0  # CHECKED; unchanged
+.set __restgprlr_26,                         0x80062578  # CHECKED; unchanged
+.set __restgprlr_27,                         0x80061D50  # CHECKED; unchanged
+.set __restgprlr_28,                         0x8006148C  # CHECKED; unchanged
+.set __restgprlr_29,                         0x800619B4  # CHECKED; unchanged
+.set __restgprlr_30,                         0x80061538  # CHECKED; unchanged
+.set __restgprlr_31,                         0x800664B0  # CHECKED; unchanged
+.set stw_r3,                                 0x800d8edc  # CHECKED; was 0x800D986C
+.set mr_r31_to_r3,                           0x800661E4  # CHECKED; unchanged
+.set mr_r31_to_r11,                          0x800c7da0  # CHECKED; was 0x800C8748
+.set call_func_dispatch,                     0x8007a8bc  # CHECKED; was 0x8007B0AC
 
 ###########################################################
 # XAM gadgets (byte pattern search):
 
 .set stack_pivot,                            0x817247D0  # CHECKED; was 0x81725378
-.set lwz_r3,                                 0x816ACD1C  # CHECKED; was 0x816ACE5C (17559); delta=-320; real 17559 gadget found manually, upstream value was stale/incorrect
+# .set lwz_r3,                                 0x816ACD1C  # CHECKED; was 0x816ACE5C (17559); delta=-320; real 17559 gadget found manually, upstream value was stale/incorrect
+# .set lwz_r3,                                 0x816ab910  # CHECKED was 0x816ABA5C <<<<< ???? lord have mercy
 .set lwz_r3_stw_r4,                          0x817A1F78  # CHECKED; was 0x817A27B0
 .set lwz_r10,                                0x8196BB54  # CHECKED; was 0x8196C574
 .set lwz_r11_off_r31,                        0x816A8C6C  # CHECKED; was 0x816A8D94
 .set stw_r30_on_r31,                         0x816FC804  # CHECKED; was 0x816FCAAC
 .set stw_r3_onto_pointer,                    0x819217C8  # CHECKED; was 0x81922120
 .set load_add_store_r10_r5_on_r11,           0x819D7858  # CHECKED; was 0x819D88A8
-.set call_func_preload,                      0x8169E114  # CHECKED; was 0x8169E1DC (17559); delta=-200; real 17559 gadget found manually, upstream value was stale/incorrect
+# .set call_func_preload,                      0x8169E114  # CHECKED; was 0x8169E1DC (17559); delta=-200; real 17559 gadget found manually, upstream value was stale/incorrect
+# .set call_func_preload,                      0x816d6050  # CHECKED was 0x8169CDDC <<<< ?????
 .set mr_r1_to_r3,                            0x817F458C  # CHECKED; was 0x817F4EC4
 .set blr_nop,                                0x817F4590  # CHECKED; was 0x817F4EC8
 .set clamp_r3,                               0x817EF93C  # CHECKED; was 0x817F030C
