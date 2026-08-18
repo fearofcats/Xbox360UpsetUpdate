@@ -18,8 +18,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Verify whether 17526's bootanim.xex addresses might've changed and if thats exploit terminating
 * [ ] Kernel gadgets and functions manually verified <- needs a sanity check
 * [ ] Verify the remaining XAM functions and gadgets <- uncertain, needs a sanity check/second opinion?
-* [ ] ~~Confirm the 17526 HV system-call ordinals~~ placeholder for now, the HV didn't change as much as I thought?, code seems identical at a first glance.
-* [ ] Update the version-specific Stage 3 values
+* [ ] ~~Confirm the 17526 HV system-call ordinals~~ placeholder.
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
