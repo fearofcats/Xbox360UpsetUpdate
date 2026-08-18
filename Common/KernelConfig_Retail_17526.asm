@@ -31,19 +31,19 @@
 .set NtClose,                                0x800895b0  # CHECKED; was 0x80089EB0
 .set ObCreateSymbolicLink,                   0x8008a5f0  # CHECKED; was 0x8008AEF0
 .set VdDisplayFatalError,                    0x800BD398  # CHECKED; was 0x800BDD40
-.set HvxKeysExSetKey,                        0x80107c00  # CHECKED; was 0x80108570
-.set HvxKeysExGetKey,                        0x80107C10  # CHECKED; was 0x80108580
-.set memcmp,                                 0x80116870  # UCHECKED; was 0x80117200
+.set HvxKeysExSetKey,                        0x80107BE0  # CHECKED; was 0x80108570
+.set HvxKeysExGetKey,                        0x80107BF0  # CHECKED; was 0x80108580
+.set memcmp,                                 0x80116870  # CHECKED; was 0x80117200
 
-# System call ordinals (must be verified against the 17526 HV image)
-.set sc_HvxPostOutputExploit,                0x0D  # PLACEHOLDER;
-.set sc_HvxFlushUserModeTb,                  0x21  # PLACEHOLDER; 
-.set sc_HvxKeysExecute,                      0x42  # PLACEHOLDER; 
-.set sc_HvxEncryptedReserveAllocation,       0x49  # PLACEHOLDER; 
-.set sc_HvxEncryptedEncryptAllocation,       0x4A  # PLACEHOLDER; 
-.set sc_HvxEncryptedReleaseAllocation,       0x4C  # PLACEHOLDER; 
-.set sc_HvxRevokeUpdate,                     0x65  # PLACEHOLDER; 
-.set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb  # UNCHECKED PLACEHOLDER;
+# System call ordinals, found ordinal −2
+.set sc_HvxPostOutputExploit,                0x0D  # CHECKED;
+.set sc_HvxFlushUserModeTb,                  0x1F  # CHECKED; 
+.set sc_HvxKeysExecute,                      0x40  # CHECKED; 
+.set sc_HvxEncryptedReserveAllocation,       0x47  # CHECKED; 
+.set sc_HvxEncryptedEncryptAllocation,       0x48  # CHECKED; 
+.set sc_HvxEncryptedReleaseAllocation,       0x4A  # CHECKED; 
+.set sc_HvxRevokeUpdate,                     0x63  # CHECKED; 
+.set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb  # UNCHECKED, should be good to go though;
 
 # Boot animation address (fixed mapping on KernelConfig_Debug, good address):
 .set BootAnimCodePageAddress,           0x98030000  # CHECKED;
