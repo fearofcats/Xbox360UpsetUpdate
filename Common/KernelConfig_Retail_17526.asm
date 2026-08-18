@@ -5,8 +5,11 @@
 
 # Kernel function addresses, sorted by original 17559 address.
 # For unchanged entries, the current address is also the 17559 sort key.
-.set ExFreePool,                             0x80064768  # CHECKED; unchanged
-.set ExAllocatePoolWithTag,                  0x80064A60  # CHECKED; unchanged
+
+# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc. I have no idea why they're here.
+
+# .set ExFreePool,                             0x80064768  # CHECKED; unchanged
+# .set ExAllocatePoolWithTag,                  0x80064A60  # CHECKED; unchanged
 .set HalSendSMCMessage,                      0x80067F48  # CHECKED; unchanged
 .set KeLockL2,                               0x80071E00  # CHECKED; unchanged
 .set KeStallExecutionProcessor,              0x80073484  # CHECKED; unchanged
@@ -16,8 +19,8 @@
 .set HvxFlushDCacheRange,                    0x8007F0B8  # CHECKED; was 0x8007F968
 .set MmGetPhysicalAddress,                   0x8007F798  # CHECKED; was 0x80080048
 .set MmFreePhysicalMemory,                   0x8007FF08  # CHECKED; was 0x800807B8
-.set MmAllocatePhysicalMemory,               0x80080200  # CHECKED; was 0x80080AB0
-.set XPhysicalAlloc,                         0x80080470  # CHECKED; was 0x80080D20
+# .set MmAllocatePhysicalMemory,               0x80080200  # CHECKED; was 0x80080AB0
+# .set XPhysicalAlloc,                         0x80080470  # CHECKED; was 0x80080D20
 .set HvxEncryptedReserveAllocation,          0x80082420  # CHECKED; was 0x80082CD0
 .set HvxEncryptedEncryptAllocation,          0x80082430  # CHECKED; was 0x80082CE0
 .set HvxEncryptedReleaseAllocation,          0x80082450  # CHECKED; was 0x80082D00
