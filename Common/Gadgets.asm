@@ -22,7 +22,7 @@
 #       Keep in mind this ONLY works once, trying to reuse _memcpy_cipher_text_offset_1 and assign it another value later
 #       on (say for a second invocation of the MEMCPY_CIPHER_TEXT macro) will cause ALL instances of its use to be updated
 #       as well. Really good shit I know, can't expect anything less from GNU software...
-# fearofcats note : line 1028 address needed a 17559 > 17526 conversion
+# fearofcats note : .long   0x818CB880  needed a 17559 > 17526 conversion. 0x818cae60 is the new address we'll use.
 
 
 ###########################################################
