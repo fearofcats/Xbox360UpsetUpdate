@@ -1,1 +1,1 @@
-actual documentation will be added later, for now i'll host the files i've been using so far here.
+# Extracted, decrypted and decompressed $SystemUpdate files. Kernel, XAM and Hypervisor stuff, more on how to replicate my setup later.
