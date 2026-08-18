@@ -26,13 +26,13 @@ This is an unofficial side project made for research and learning. It is not aff
 
 # FAQ
 **Q: Why are you doing this?**  
-A: well why not, i get to challenge myself, and this is kinda of fun.
+A: well why not, it's to challenge myself.
 
-**Q: Why 17526?, and what about my Dashboard?**  
-A: if i get 17526 working, i plan to document the process so other ports are easier to attempt... as for why 17526 in specific?, it's the version my console just happens to be stuck in due to a 4gb emmc failure.
+**Q: 17526?, and what about my Dashboard?**  
+A: if 17526 ends up working, i plan to document the process throughly so other ports are easier to attempt, again no promises.
 
 **Q: When will this release? Will it work?**  
-A: no promises, I do know what to do and have stuff planned out for the port, such as "unhardcoding" a few things, but don't expect anything out of this.
+A: no promises, i'm not certain. don't expect anything out of this.
 
 **Q: Does this work on Blades/NXE consoles?**  
 A: NXE and Blades has not been investigated.
