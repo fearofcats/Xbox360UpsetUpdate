@@ -12,28 +12,28 @@
 # .set ExAllocatePoolWithTag,                  0x80064A60  # NOT USED;  unchanged
 # .set MmAllocatePhysicalMemory,               0x80080200  # NOT USED;  was 0x80080AB0
 # .set XPhysicalAlloc,                         0x80080470  # NOT USED;  was 0x80080D20
-.set HalSendSMCMessage,                      0x80067F48  # UNCHECKED; unchanged
-.set KeLockL2,                               0x80071E00  # UNCHECKED; unchanged
-.set KeStallExecutionProcessor,              0x80073484  # UNCHECKED; unchanged
-.set KeFlushCacheRange,                      0x80073850  # UNCHECKED; unchanged
-.set XexUnloadImage,                         0x8007C838  # UNCHECKED; was 0x8007D0E8
-.set XexLoadImage,                           0x8007CF10  # UNCHECKED; was 0x8007D7C0
-.set HvxFlushDCacheRange,                    0x8007F0B8  # UNCHECKED; was 0x8007F968
-.set MmGetPhysicalAddress,                   0x8007F798  # UNCHECKED; was 0x80080048
-.set MmFreePhysicalMemory,                   0x8007FF08  # UNCHECKED; was 0x800807B8
-.set HvxEncryptedReserveAllocation,          0x80082420  # UNCHECKED; was 0x80082CD0
-.set HvxEncryptedEncryptAllocation,          0x80082430  # UNCHECKED; was 0x80082CE0
-.set HvxEncryptedReleaseAllocation,          0x80082450  # UNCHECKED; was 0x80082D00
-.set NtAllocateVirtualMemory,                0x800831F8  # UNCHECKED; was 0x80083AA8
-.set DbgBreakPoint,                          0x800855F0  # UNCHECKED; was 0x80085EA0
-.set DbgPrint,                               0x80085638  # UNCHECKED; was 0x80085EE8
-.set RtlInitAnsiString,                      0x80085860  # UNCHECKED; was 0x80086110
-.set NtClose,                                0x800895b0  # UNCHECKED; was 0x80089EB0
-.set ObCreateSymbolicLink,                   0x8008a5f0  # UNCHECKED; was 0x8008AEF0
-.set VdDisplayFatalError,                    0x800BD398  # UNCHECKED; was 0x800BDD40
-.set HvxKeysExSetKey,                        0x80107c00  # UNCHECKED; was 0x80108570
-.set HvxKeysExGetKey,                        0x80107C10  # UNCHECKED; was 0x80108580
-.set memcmp,                                 0x80116870  # UNCHECKED; was 0x80117200
+.set HalSendSMCMessage,                      0x80067F48  # CHECKED; unchanged
+.set KeLockL2,                               0x80071E00  # CHECKED; unchanged
+.set KeStallExecutionProcessor,              0x80073484  # CHECKED; unchanged
+.set KeFlushCacheRange,                      0x80073850  # CHECKED; unchanged
+.set XexUnloadImage,                         0x8007C838  # CHECKED; was 0x8007D0E8
+.set XexLoadImage,                           0x8007CF10  # CHECKED; was 0x8007D7C0
+.set HvxFlushDCacheRange,                    0x8007F0B8  # CHECKED; was 0x8007F968
+.set MmGetPhysicalAddress,                   0x8007F798  # CHECKED; was 0x80080048
+.set MmFreePhysicalMemory,                   0x8007FF08  # CHECKED; was 0x800807B8
+.set HvxEncryptedReserveAllocation,          0x80082420  # CHECKED; was 0x80082CD0
+.set HvxEncryptedEncryptAllocation,          0x80082430  # CHECKED; was 0x80082CE0
+.set HvxEncryptedReleaseAllocation,          0x80082450  # CHECKED; was 0x80082D00
+.set NtAllocateVirtualMemory,                0x800831F8  # CHECKED; was 0x80083AA8
+.set DbgBreakPoint,                          0x800855F0  # CHECKED; was 0x80085EA0
+.set DbgPrint,                               0x80085638  # CHECKED; was 0x80085EE8
+.set RtlInitAnsiString,                      0x80085860  # CHECKED; was 0x80086110
+.set NtClose,                                0x800895b0  # CHECKED; was 0x80089EB0
+.set ObCreateSymbolicLink,                   0x8008a5f0  # CHECKED; was 0x8008AEF0
+.set VdDisplayFatalError,                    0x800BD398  # CHECKED; was 0x800BDD40
+.set HvxKeysExSetKey,                        0x80107c00  # CHECKED; was 0x80108570
+.set HvxKeysExGetKey,                        0x80107C10  # CHECKED; was 0x80108580
+.set memcmp,                                 0x80116870  # UCHECKED; was 0x80117200
 
 # System call ordinals (must be verified against the 17526 HV image)
 .set sc_HvxPostOutputExploit,                0x0D  # PLACEHOLDER;
@@ -66,17 +66,17 @@
 ###########################################################
 # Kernel gadgets :
 
-.set __restgprlr_24,                         0x800631A0  # UNCHECKED; unchanged
-.set __restgprlr_26,                         0x80062578  # UNCHECKED; unchanged
-.set __restgprlr_27,                         0x80061D50  # UNCHECKED; unchanged
-.set __restgprlr_28,                         0x8006148C  # UNCHECKED; unchanged
-.set __restgprlr_29,                         0x800619B4  # UNCHECKED; unchanged
-.set __restgprlr_30,                         0x80061538  # UNCHECKED; unchanged
-.set __restgprlr_31,                         0x800664B0  # UNCHECKED; unchanged
-.set stw_r3,                                 0x800d8edc  # UNCHECKED; was 0x800D986C
-.set mr_r31_to_r3,                           0x800661E4  # UNCHECKED; unchanged
-.set mr_r31_to_r11,                          0x800c7da0  # UNCHECKED; was 0x800C8748
-.set call_func_dispatch,                     0x8007a8bc  # UNCHECKED; was 0x8007B0AC
+.set __restgprlr_24,                         0x800631A0  # CHECKED; unchanged
+.set __restgprlr_26,                         0x80062578  # CHECKED; unchanged
+.set __restgprlr_27,                         0x80061D50  # CHECKED; unchanged
+.set __restgprlr_28,                         0x8006148C  # CHECKED; unchanged
+.set __restgprlr_29,                         0x800619B4  # CHECKED; unchanged
+.set __restgprlr_30,                         0x80061538  # CHECKED; unchanged
+.set __restgprlr_31,                         0x800664B0  # CHECKED; unchanged
+.set stw_r3,                                 0x800d8edc  # CHECKED; was 0x800D986C
+.set mr_r31_to_r3,                           0x800661E4  # CHECKED; unchanged
+.set mr_r31_to_r11,                          0x800c7da0  # CHECKED; was 0x800C8748
+.set call_func_dispatch,                     0x8007a8bc  # CHECKED; was 0x8007B0AC
 
 ###########################################################
 # XAM gadgets (byte pattern search):
