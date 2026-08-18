@@ -23,7 +23,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Prepare the clean 17526 HV restore segment
 * [X] Does it compile?
 * [ ] Build and inspect the completed binaries
-* [x] ~~Test on my hardware~~, sorta tested, I cannot debug anything as of now, compiled as is 08/17/2026, no changes were made to Stage 1, 2, 3 and 4.
+* [x] ~~Test on hardware~~, sorta tested, I cannot debug anything as of now. I don't own a modded console... compiled as is 08/17/2026, no changes were made to Stage 1, 2, 3 and 4. Notes: didn't get "Running Exploit" to appear, instant freeze.
  
 ## Approach
 
