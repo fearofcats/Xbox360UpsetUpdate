@@ -6,12 +6,12 @@
 # Kernel function addresses, sorted by original 17559 address.
 # For unchanged entries, the current address is also the 17559 sort key.
 
-# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc are left overs from a deprecated automation tool
+# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc are left overs from a deprecated automation tool, unless stated otherwise, unapplicable.
 
-# .set ExFreePool,                             0x80064768  # UNAPPLICABLE;  unneeded? unchanged
-# .set ExAllocatePoolWithTag,                  0x80064A60  # UNAPPLICABLE;  unneeded? unchanged
-# .set MmAllocatePhysicalMemory,               0x80080200  # UNAPPLICABLE;  unneeded? was 0x80080AB0
-# .set XPhysicalAlloc,                         0x80080470  # UNAPPLICABLE;  unneeded? was 0x80080D20
+# .set ExFreePool,                             0x80064768  # NOT USED;  unchanged
+# .set ExAllocatePoolWithTag,                  0x80064A60  # NOT USED;  unchanged
+# .set MmAllocatePhysicalMemory,               0x80080200  # NOT USED;  was 0x80080AB0
+# .set XPhysicalAlloc,                         0x80080470  # NOT USED;  was 0x80080D20
 .set HalSendSMCMessage,                      0x80067F48  # UNCHECKED; unchanged
 .set KeLockL2,                               0x80071E00  # UNCHECKED; unchanged
 .set KeStallExecutionProcessor,              0x80073484  # UNCHECKED; unchanged
