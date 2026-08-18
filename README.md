@@ -12,17 +12,17 @@ This is an unofficial side project made for research and learning. It is not aff
 ![Testing](https://img.shields.io/badge/hardware-untested-red)
 ![Upstream](https://img.shields.io/badge/upstream-BadUpdate%20v1.2-purple)
 
-## Current Progress (sorted by priority, crossed out means not applicable yet)
+## Current Progress (sorted by priority.)
 
 * [x] Created a 17526 kernel configuration
 * [ ] Verify whether 17526's bootanim.xex addresses might've changed and if thats exploit terminating
-* [ ] Kernel gadgets and functions manually verified <- needs a sanity check
-* [ ] Verify the remaining XAM functions and gadgets <- uncertain, needs a sanity check/second opinion?
-* [ ] ~~Confirm the 17526 HV system-call ordinals~~ placeholder.
+* [ ] Kernel gadgets and functions manually verified sanity check
+* [ ] Verify the remaining XAM functions and gadgets. really uncertain, sanity check/second opinion?
+* [ ] ~~Confirm the 17526 HV system-call ordinals~~ PLACEHOLDER
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
-* [ ] ~~Test on hardware~~, being tested as is currently, I cannot debug anything as of now. No modded console. as of 08/17/2026 no changes were made to Stage 1, 2, 3 and 4. Notes: "Running Exploit" did not appear, instant freeze.
+* [ ] ~~Test on hardware~~, being tested as is currently, no major changes were made to Stage 1, 2, 3 and 4. Notes: "Running Exploit" did not appear, instant freeze.
 
 # FAQ
 **Q: Why are you doing this?**  
