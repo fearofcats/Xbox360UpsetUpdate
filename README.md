@@ -5,7 +5,7 @@ An experimental work-in-progress port of [Grimdoomer’s Xbox360BadUpdate](https
 This is an unofficial side project made for research and learning. It is not affiliated with or supported by Grimdoomer.
 
 > [!WARNING]
-> This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it's just gonna freeze up. **This makes the use of AI-assisted tools. Though every entry marked CHECKED is manually verified.**
+> This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it's just gonna freeze up. **This project DOES make the use of AI-assisted tools. Though every entry marked CHECKED is manually verified.**
 
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange)
 ![Dashboard](https://img.shields.io/badge/dashboard-17526-blue)
@@ -29,9 +29,7 @@ This is an unofficial side project made for research and learning. It is not aff
 
 Addresses are compared directly between the 17559 and 17526 files using Ghidra.
 
-Address deltas are used only as hints. Every final value is manually checked against the corresponding function or instruction sequence before being marked as verified.
-
-~~A small Python tool may be used to apply the confirmed replacements, but it will not blindly shift every address by one global delta.~~ unreliable
+Every final value is manually checked against the corresponding function or instruction sequence before being marked as verified.
 
 ## Building
 
@@ -43,7 +41,7 @@ Detailed build instructions will be added after the port has been completed and 
 
 This repository contains only my porting work, configuration files, notes, and related scripts.
 
-~~Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files by yourself.~~, Adding them as proof of concept if anyone wants to take a look, I'll explain how to get theses by yourself later (this means extracting them from any dashboard).
+~~Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files by yourself.~~, Adding them as proof of concept under "Binaries/" if anyone wants to take a look. I'll explain how to get theses by yourself later (this means extracting them from any dashboard).
 
 ## Disclaimer
 
