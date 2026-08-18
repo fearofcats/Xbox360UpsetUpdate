@@ -1,15 +1,17 @@
 # Ported from BadUpdate 17559 -> 17526
 
-# note to self; unchecking everything for now
+# note to self; sanity check everything
 .set KRNL_VER, 17526
 
 # Kernel function addresses, sorted by original 17559 address.
 # For unchanged entries, the current address is also the 17559 sort key.
 
-# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc. I have no idea why they're here.
+# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc are left overs from a deprecated automation tool
 
-# .set ExFreePool,                             0x80064768  # UNCHECKED;  possibly unneeded? unchanged
-# .set ExAllocatePoolWithTag,                  0x80064A60  # UNCHECKED;  possibly unneeded? unchanged
+# .set ExFreePool,                             0x80064768  # UNAPPLICABLE;  unneeded? unchanged
+# .set ExAllocatePoolWithTag,                  0x80064A60  # UNAPPLICABLE;  unneeded? unchanged
+# .set MmAllocatePhysicalMemory,               0x80080200  # UNAPPLICABLE;  unneeded? was 0x80080AB0
+# .set XPhysicalAlloc,                         0x80080470  # UNAPPLICABLE;  unneeded? was 0x80080D20
 .set HalSendSMCMessage,                      0x80067F48  # UNCHECKED; unchanged
 .set KeLockL2,                               0x80071E00  # UNCHECKED; unchanged
 .set KeStallExecutionProcessor,              0x80073484  # UNCHECKED; unchanged
@@ -19,8 +21,6 @@
 .set HvxFlushDCacheRange,                    0x8007F0B8  # UNCHECKED; was 0x8007F968
 .set MmGetPhysicalAddress,                   0x8007F798  # UNCHECKED; was 0x80080048
 .set MmFreePhysicalMemory,                   0x8007FF08  # UNCHECKED; was 0x800807B8
-# .set MmAllocatePhysicalMemory,               0x80080200  # UNCHECKED; possibly unneeded? was 0x80080AB0
-# .set XPhysicalAlloc,                         0x80080470  # UNCHECKED; possibly unneeded? was 0x80080D20
 .set HvxEncryptedReserveAllocation,          0x80082420  # UNCHECKED; was 0x80082CD0
 .set HvxEncryptedEncryptAllocation,          0x80082430  # UNCHECKED; was 0x80082CE0
 .set HvxEncryptedReleaseAllocation,          0x80082450  # UNCHECKED; was 0x80082D00
@@ -87,10 +87,10 @@
 
 .set stack_pivot,                            0x817247D0  # UNCHECKED; was 0x81725378
 
-# TODO: figure out which is which, unapplicable..
+# TODO: unapplicable
 
-   # .set lwz_r3,                                 0x816ACD1C  # UNCHECKED; was 0x816ACE5C (17559); delta=-320; real 17559 gadget found manually, upstream value was stale/incorrect
-   # .set lwz_r3,                                 0x816ab910  # UNCHECKED; was 0x816ABA5C <<<< ????
+   # .set lwz_r3,                                 0x816ACD1C  # UNRESOLVED; was 0x816ACE5C (17559); delta=-320; real 17559 gadget found manually, upstream value was stale/incorrect
+   # .set lwz_r3,                                 0x816ab910  # UNRESOLVED; was 0x816ABA5C <<<< ????
 
 .set lwz_r3_stw_r4,                          0x817A1F78  # UNCHECKED; was 0x817A27B0
 .set lwz_r10,                                0x8196BB54  # UNCHECKED; was 0x8196C574
@@ -99,10 +99,10 @@
 .set stw_r3_onto_pointer,                    0x819217C8  # UNCHECKED; was 0x81922120
 .set load_add_store_r10_r5_on_r11,           0x819D7858  # UNCHECKED; was 0x819D88A8
 
-# TODO: figure out which is which, unapplicable..
+# TODO: unapplicable
 
-   # .set call_func_preload,                      0x8169E114  # UNCHECKED; was 0x8169E1DC (17559); delta=-200; real 17559 gadget found manually, upstream value was stale/incorrect
-   # .set call_func_preload,                      0x816d6050  # UNCHECKED; was 0x8169CDDC <<<< ????
+   # .set call_func_preload,                      0x8169E114  # UNRESOLVED; was 0x8169E1DC (17559); delta=-200; real 17559 gadget found manually, upstream value was stale/incorrect
+   # .set call_func_preload,                      0x816d6050  # UNRESOLVED; was 0x8169CDDC <<<< ????
 
 .set mr_r1_to_r3,                            0x817F458C  # UNCHECKED; was 0x817F4EC4
 .set blr_nop,                                0x817F4590  # UNCHECKED; was 0x817F4EC8
