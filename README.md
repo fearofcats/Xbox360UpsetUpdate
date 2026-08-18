@@ -7,8 +7,7 @@ This is an unofficial side project made for research and learning. It is not aff
 > [!WARNING]
 > This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it is expected to freeze or fail. **This project DOES make the use of AI-assisted tools. Though every entry marked CHECKED is manually verified.**
 
-being tested as is currently, no major changes made to Stage 1, 2, 3 and 4 yet. 
-Notes: "Running Exploit" did not appear, instant freeze.
+Early hardware test: the console froze before “Running Exploit” appeared. This test predates the remaining porting work and does not indicate compatibility.
 
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange)
 ![Dashboard](https://img.shields.io/badge/dashboard-17526-blue)
@@ -17,10 +16,10 @@ Notes: "Running Exploit" did not appear, instant freeze.
 ## Current Progress (sorted by priority.)
 
 * [x] Created a 17526 kernel configuration
-* [ ] Verify whether 17526's bootanim.xex addresses might've changed and if thats exploit terminating
-* [ ] Kernel gadgets and functions manually verified sanity check
+* [ ] Verify whether 17526's bootanim.xex addresses might've changed and whether those differences prevent exploit execution
+* [ ] Re-verify all kernel functions and gadgets
 * [ ] Verify the remaining XAM functions and gadgets. uncertain, sanity check/second opinion?
-* [ ] ~~Confirm the 17526 HV system-call ordinals~~ placeholder, needs research
+* [ ] Research HV system-call ordinals
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
@@ -40,8 +39,7 @@ A: no promises, i'm not certain. don't expect anything out of this.
 A: NXE and Blades have not been investigated.
 
 **Q: AI assisted?**  
-A: yeah, but it isnt 'vibecoded', the addresses are being manually found by me using Ghidra, the only use of AI here is to help me get a better work flow going.. if this upsets you (no pun intended) feel free to ignore the project
-
+A: yeah, but it isnt 'vibecoded', AI helped organize the workflow while all verified addresses were manually inspected.
  
 ## Approach
 
@@ -59,7 +57,7 @@ Detailed build instructions will be added after the port has been completed and 
 
 This repository contains my porting work, configuration files, notes, and related scripts.
 
-~~Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files by yourself.~~ Adding them as proof of concept under "Binaries/" if anyone wants to take a look. I'll explain how to get these by yourself later (this means extracting them from any dashboard).
+You can check out my disassembly work at "Binaries/". I'll explain how to do this by yourself later.
 
 ## Disclaimer
 
