@@ -5,7 +5,7 @@ An experimental work-in-progress port of [Grimdoomer’s Xbox360BadUpdate](https
 This is an unofficial side project made for research and learning. It is not affiliated with or supported by Grimdoomer.
 
 > [!WARNING]
-> This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it is expected to freeze or fail. **This project DOES make the use of AI-assisted tools. Though every entry marked CHECKED is manually verified.**
+> This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it is expected to freeze or fail. **This project uses AI-assisted tools; however, every entry marked CHECKED has been manually verified.**
 
 Early hardware test: the console froze before “Running Exploit” appeared. This test predates the remaining porting work and does not indicate compatibility.
 
@@ -18,7 +18,7 @@ Early hardware test: the console froze before “Running Exploit” appeared. Th
 * [x] Created a 17526 kernel configuration
 * [ ] Verify whether 17526's bootanim.xex addresses might've changed and whether those differences prevent exploit execution
 * [ ] Re-verify all kernel functions and gadgets
-* [ ] Verify the remaining XAM functions and gadgets. uncertain, sanity check/second opinion?
+* [ ] Verify the unsolved XAM functions and gadgets
 * [ ] Research HV system-call ordinals
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
