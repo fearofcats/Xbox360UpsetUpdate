@@ -18,12 +18,12 @@ This is an unofficial side project made for research and learning. It is not aff
 * [x] Kernel gadgets and functions manually verified 
 * [x] Verify the remaining XAM functions and gadgets
 * [x] ~~Confirm the 17526 HV system-call ordinals~~ placeholder for now, the HV didn't change as much as I thought?, code seems identical at a first glance.
-* [ ] Update the version-specific Stage 3 values
-* [ ] Update the version-specific Stage 4 values
+* [ ] ~~Update the version-specific Stage 3 values~~ marked out baked addresses, might be better to mess with the c code instead?
+* [ ] ~~Update the version-specific Stage 4 values~~ marked out baked addresses
 * [ ] Prepare the clean 17526 HV restore segment
 * [X] Does it compile?
 * [ ] Build and inspect the completed binaries
-* [x] ~~Test on my hardware~~, sorta tested, I cannot debug anything as of now.
+* [x] ~~Test on my hardware~~, sorta tested, I cannot debug anything as of now, compiled as is 08/17/2026, no changes were made to Stage 1, 2, 3 and 4.
  
 ## Approach
 
