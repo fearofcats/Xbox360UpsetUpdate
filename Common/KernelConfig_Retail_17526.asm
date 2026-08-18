@@ -85,6 +85,18 @@
 ###########################################################
 # XAM gadgets (byte pattern search):
 
+
+
+NOT A SINGLE OF THESE ARE CORRECT? WHAT THE FUCK?
+
+
+
+
+
+
+
+
+
 .set stack_pivot,                            0x817247D0  # UNCHECKED; was 0x81725378
 
 # TODO: 
