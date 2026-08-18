@@ -24,6 +24,29 @@ This is an unofficial side project made for research and learning. It is not aff
 * [X] Does it compile?
 * [ ] Build and inspect the completed binaries
 * [x] ~~Test on hardware~~, sorta tested, I cannot debug anything as of now. I don't own a modded console... compiled as is 08/17/2026, no changes were made to Stage 1, 2, 3 and 4. Notes: didn't get "Running Exploit" to appear, instant freeze.
+* [ ] Figure out how to compile BD 1.3?
+* [ ] Move configs over to 1.3
+* [ ] Port 1.3 aswell?
+
+# FAQ
+**Q: Why are you doing this?**  
+A: well why not, i get to challenge myself, and this is kinda of fun.
+
+**Q: Why 17526?, and what about my Dashboard?**  
+A: if i get 17526 working, i plan to document the process so other ports are easier to attempt... as for why 17526 in specific?, it's the version my console just happens to be stuck in due to a 4gb emmc failure.
+
+**Q: When will this release? Will it work?**  
+A: no promises, I do know what to do and have stuff planned out for the port, such as "unhardcoding" a few things, but don't expect anything out of this.
+
+**Q: Does this work on Blades/NXE consoles?**  
+A: as for NXE and Blades, you wont be able to use Rock Band Blitz. It's probably a easier fix for NXE, just think of it as using ABadAvatar instead. Blades? Not entirely sure.
+
+**Q: AI assisted?**  
+A: yeah, but it isnt 'vibecoded', the addresses are being manually found by me using Ghidra, the only use of AI here is to help me get a better work flow going.. if this upsets you (no pun intended) feel free to ignore the project
+
+**Q: Just do a RGH/16MB conversion.**  
+A: no, sorry.
+
  
 ## Approach
 
