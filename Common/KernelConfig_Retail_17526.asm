@@ -49,23 +49,19 @@
 .set BootAnimCodePageAddress,           0x98030000  # UNCHECKED;
 
 # XAM function addresses: 
-.set CreateFileA,                            0x8171b3a0  # CHECKED;
-.set GetFileSize,                            0x8171bc20  # UNCHECKED;
-.set ReadFile,                               0x8171C718  # UNCHECKED;
-.set WriteFile,                              0x817216C0  # UNCHECKED;
-.set CloseHandle,                            0x8171AE00  # UNCHECKED;
-.set CreateThread,                           0x8171b610  # UNCHECKED;
-.set ResumeThread,                           0x8171C8F0  # UNCHECKED;
-.set GetLastError,                           0x81720f18  # UNCHECKED;
-.set XamLoaderLaunchTitle,                   0x816A1728  # UNCHECKED;
-.set XamLoaderTerminateTitle,                0x816A1360  # UNCHECKED;
-.set XLaunchNewImage,                        XamLoaderLaunchTitle  # UNCHECKED;
-.set XMemCpy,                                0x81721B90  # UNCHECKED;
-.set XMemSet,                                0x81721e88  # UNCHECKED;
-
-# Aliases for compatibility with BadUpdate source:
-.set memcpy, XMemCpy  # UNCHECKED alias
-.set memset, XMemSet  # UNCHECKED alias
+.set CreateFileA,                            0x8171b398  # CHECKED;
+.set GetFileSize,                            0x8171bc18  # CHECKED;
+.set ReadFile,                               0x8171C718  # CHECKED;
+.set WriteFile,                              0x817216C0  # CHECKED;
+.set CloseHandle,                            0x8171AE00  # CHECKED;
+.set CreateThread,                           0x8171b608  # CHECKED;
+.set ResumeThread,                           0x8171C8F0  # CHECKED;
+.set GetLastError,                           0x81720f18  # CHECKED;
+.set XamLoaderLaunchTitle,                   0x816A1728  # CHECKED;
+.set XamLoaderTerminateTitle,                0x816A1360  # CHECKED;
+.set XLaunchNewImage,                        XamLoaderLaunchTitle  # CHECKED;
+.set memcpy,                                 0x8172cba0  # CHECKED;
+.set memset,                                 0x8172cb00  # CHECKED;
 
 ###########################################################
 # Kernel gadgets :
