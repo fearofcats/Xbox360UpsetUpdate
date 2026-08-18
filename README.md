@@ -57,7 +57,7 @@ Detailed build instructions will be added after the port has been completed and 
 
 This repository contains my porting work, configuration files, notes, and related scripts.
 
-You can check out my disassembly work at "Binaries/". I'll explain how to do this by yourself later.
+You can check out my disassembly work at  `Binaries/  `. I'll explain how to do this by yourself later.
 
 ## Disclaimer
 
