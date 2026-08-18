@@ -35,13 +35,10 @@ A: if i get 17526 working, i plan to document the process so other ports are eas
 A: no promises, I do know what to do and have stuff planned out for the port, such as "unhardcoding" a few things, but don't expect anything out of this.
 
 **Q: Does this work on Blades/NXE consoles?**  
-A: as for NXE and Blades, you wont be able to use Rock Band Blitz. It's probably a easier fix for NXE, just think of it as using ABadAvatar instead. Blades? Not entirely sure.
+A: NXE and Blades has not been investigated.
 
 **Q: AI assisted?**  
 A: yeah, but it isnt 'vibecoded', the addresses are being manually found by me using Ghidra, the only use of AI here is to help me get a better work flow going.. if this upsets you (no pun intended) feel free to ignore the project
-
-**Q: Just do a RGH/16MB conversion.**  
-A: no, sorry.
 
  
 ## Approach
