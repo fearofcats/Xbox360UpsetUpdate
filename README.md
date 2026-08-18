@@ -16,8 +16,8 @@ This is an unofficial side project made for research and learning. It is not aff
 * [x] Created a 17526 kernel configuration
 * [ ] Verify whether 17526's bootanim.xex addresses might've changed and if thats exploit terminating
 * [ ] Kernel gadgets and functions manually verified sanity check
-* [ ] Verify the remaining XAM functions and gadgets. really uncertain, sanity check/second opinion?
-* [ ] ~~Confirm the 17526 HV system-call ordinals~~ PLACEHOLDER
+* [ ] Verify the remaining XAM functions and gadgets. uncertain, sanity check/second opinion?
+* [ ] ~~Confirm the 17526 HV system-call ordinals~~ placeholder, needs research
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
@@ -54,7 +54,7 @@ Detailed build instructions will be added after the port has been completed and 
 
 ## Repository Contents
 
-This repository contains only my porting work, configuration files, notes, and related scripts.
+This repository contains my porting work, configuration files, notes, and related scripts.
 
 ~~Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files by yourself.~~ Adding them as proof of concept under "Binaries/" if anyone wants to take a look. I'll explain how to get these by yourself later (this means extracting them from any dashboard).
 
