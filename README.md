@@ -1,6 +1,6 @@
-# Xbox360BadUpdate 1.2 17526 Port
+# Xbox360UpsetUpdate 17526.
 
-An experimental work-in-progress port of [Grimdoomer’s Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**.
+An experimental work-in-progress port of [Grimdoomer’s Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**, currently using 1.2 as a base.
 
 This is an unofficial side project made for research and learning. It is not affiliated with or supported by Grimdoomer.
 
@@ -14,6 +14,7 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Current Progress (sorted by priority, crossed out means not applicable yet)
 
+* [x] Created a 17526 kernel configuration
 * [ ] Verify whether 17526's bootanim.xex addresses might've changed and if thats exploit terminating
 * [ ] Kernel gadgets and functions manually verified <- needs a sanity check
 * [ ] Verify the remaining XAM functions and gadgets <- uncertain, needs a sanity check/second opinion?
@@ -22,13 +23,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] ~~Update the version-specific Stage 4 values~~ marked out baked addresses
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
-* [x] Created a 17526 kernel configuration
-* [x] ~~Test on hardware~~, tested as is, I cannot debug anything as of now. No modded console. 08/17/2026, no changes were made to Stage 1, 2, 3 and 4. Notes: "Running Exploit" did not appear, instant freeze.
-
-
-* [ ] Figure out how to compile BD 1.3?
-* [ ] Move configs over to 1.3
-* [ ] Port 1.3 aswell?
+* [ ] ~~Test on hardware~~, being tested as is currently, I cannot debug anything as of now. No modded console. 08/17/2026, no changes were made to Stage 1, 2, 3 and 4. Notes: "Running Exploit" did not appear, instant freeze.
 
 # FAQ
 **Q: Why are you doing this?**  
