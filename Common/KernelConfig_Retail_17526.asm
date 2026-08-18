@@ -6,7 +6,7 @@
 # Kernel function addresses, sorted by original 17559 address.
 # For unchanged entries, the current address is also the 17559 sort key.
 
-# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc are left overs from a deprecated automation tool, unless stated otherwise, not used.
+# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc are leftovers from a deprecated automation tool, unless stated otherwise, not used.
 
 # .set ExFreePool,                             0x80064768  # NOT USED;  unchanged
 # .set ExAllocatePoolWithTag,                  0x80064A60  # NOT USED;  unchanged
