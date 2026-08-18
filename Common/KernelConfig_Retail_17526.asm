@@ -87,18 +87,15 @@
 .set lwz_r10,                                0x8196bb54  # CHECKED was 0x8196C574
 .set lwz_r11_off_r31,                        0x81920924  # CHECKED was 0x816A8D94
 .set stw_r30_on_r31,                         0x816fc7f4  # CHECKED was 0x816FCAAC
-
-# just auto saving, still doing these 
-
-.set stw_r3_onto_pointer,                    0x00000000  # UNCHECKED was 0x81922120
-.set load_add_store_r10_r5_on_r11,           0x00000000  # UNCHECKED was 0x819D88A8
-.set call_func_preload,                      0x00000000  # UNCHECKED was 0x8169CDDC
-.set mr_r1_to_r3,                            0x00000000  # UNCHECKED was 0x817F4EC4
-.set blr_nop,                                0x00000000  # UNCHECKED was 0x817F4EC8
-.set clamp_r3,                               0x00000000  # UNCHECKED was 0x817F030C
-.set mul_r3_4_lwzx_r11,                      0x00000000  # UNCHECKED was 0x816D8864
-.set load_add_store_r11_r30_on_r31,          0x00000000  # UNCHECKED was 0x817F7DC8
-.set call_ptr_off_r31,                       0x00000000  # UNCHECKED was 0x81699DC8
+.set stw_r3_onto_pointer,                    0x81921848  # CHECKED was 0x81922120
+.set load_add_store_r10_r5_on_r11,           0x819d7858  # CHECKED was 0x819D88A8
+.set call_func_preload,                      0x8169cd14  # CHECKED was 0x8169CDDC
+.set mr_r1_to_r3,                            0x817f4584  # CHECKED was 0x817F4EC4
+.set blr_nop,                                0x817f4588  # CHECKED was 0x817F4EC8
+.set clamp_r3,                               0x817ef9bc  # CHECKED was 0x817F030C
+.set mul_r3_4_lwzx_r11,                      0x816d86f0  # CHECKED was 0x816D8864
+.set load_add_store_r11_r30_on_r31,          0x817f7488  # CHECKED was 0x817F7DC8
+.set call_ptr_off_r31,                       0x819d7858  # CHECKED was 0x81699DC8
 
 # These are constants, not addresses   unchanged:
 .set lwz_r3_stw_r4__r3_disp,           0
