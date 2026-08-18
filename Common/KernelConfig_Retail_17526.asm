@@ -35,7 +35,7 @@
 .set HvxKeysExGetKey,                        0x80107C10  # UNCHECKED; was 0x80108580
 .set memcmp,                                 0x80116870  # UNCHECKED; was 0x80117200
 
-# System call ordinals (must be verified against the 17526 HV image): code seems identical through ghidra, more on that later
+# System call ordinals (must be verified against the 17526 HV image)
 .set sc_HvxPostOutputExploit,                0x0D  # PLACEHOLDER;
 .set sc_HvxFlushUserModeTb,                  0x21  # PLACEHOLDER; 
 .set sc_HvxKeysExecute,                      0x42  # PLACEHOLDER; 
@@ -48,7 +48,7 @@
 # Boot animation address (fixed mapping on KernelConfig_Debug.):
 .set BootAnimCodePageAddress,           0x98030000  # UNCHECKED;
 
-# XAM function addresses:
+# XAM function addresses: 
 .set CreateFileA,                            0x8171b3a0  # CHECKED;
 .set GetFileSize,                            0x8171bc20  # UNCHECKED;
 .set ReadFile,                               0x8171C718  # UNCHECKED;
@@ -85,4 +85,34 @@
 ###########################################################
 # XAM gadgets (byte pattern search):
 
-ok.. you win grimdoomer, you win.. what did I screw up here?
+.set stack_pivot,                            0x00000000  # UNCHECKED was 0x81725378
+.set lwz_r3,                                 0x00000000  # UNCHECKED was 0x816ABA5C
+.set lwz_r3_stw_r4,                          0x00000000  # UNCHECKED was 0x817A27B0
+.set lwz_r10,                                0x00000000  # UNCHECKED was 0x8196C574
+.set lwz_r11_off_r31,                        0x00000000  # UNCHECKED was 0x816A8D94
+.set stw_r30_on_r31,                         0x00000000  # UNCHECKED was 0x816FCAAC
+.set stw_r3_onto_pointer,                    0x00000000  # UNCHECKED was 0x81922120
+.set load_add_store_r10_r5_on_r11,           0x00000000  # UNCHECKED was 0x819D88A8
+.set call_func_preload,                      0x00000000  # UNCHECKED was 0x8169CDDC
+.set mr_r1_to_r3,                            0x00000000  # UNCHECKED was 0x817F4EC4
+.set blr_nop,                                0x00000000  # UNCHECKED was 0x817F4EC8
+.set clamp_r3,                               0x00000000  # UNCHECKED was 0x817F030C
+.set mul_r3_4_lwzx_r11,                      0x00000000  # UNCHECKED was 0x816D8864
+.set load_add_store_r11_r30_on_r31,          0x00000000  # UNCHECKED was 0x817F7DC8
+.set call_ptr_off_r31,                       0x00000000  # UNCHECKED was 0x81699DC8
+
+# These are constants, not addresses   unchanged:
+.set lwz_r3_stw_r4__r3_disp,           0
+.set lwz_r3_stw_r4__r4_disp,           8
+.set mul_r3_4_lwzx_r11__disp,          0x3D64
+.set load_add_store_r11_r30_on_r31__disp, 0x18
+.set cf_r3_def,                         0x29292929
+.set cf_r4_def,                         0x28282828
+.set cf_r5_def,                         0x27272727
+.set cf_r6_def,                         0x26262626
+.set cf_r7_def,                         0x25252525
+.set cf_r3_offset,                      0x2C
+.set cf_r4_offset,                      0x24
+.set cf_r5_offset,                      0x1C
+.set cf_r6_offset,                      0x14
+.set cf_r7_offset,                      0x0C
