@@ -28,13 +28,13 @@ This is an unofficial side project made for research and learning. It is not aff
 A: well why not, it's to challenge myself.
 
 **Q: 17526?, and what about my Dashboard?**  
-A: if 17526 ends up working, i plan to document the process throughly so other ports are easier to attempt, again no promises.
+A: if 17526 ends up working, i plan to document the process thoroughly so other ports are easier to attempt, again no promises.
 
 **Q: When will this release? Will it work?**  
 A: no promises, i'm not certain. don't expect anything out of this.
 
 **Q: Does this work on Blades/NXE consoles?**  
-A: NXE and Blades has not been investigated.
+A: NXE and Blades have not been investigated.
 
 **Q: AI assisted?**  
 A: yeah, but it isnt 'vibecoded', the addresses are being manually found by me using Ghidra, the only use of AI here is to help me get a better work flow going.. if this upsets you (no pun intended) feel free to ignore the project
