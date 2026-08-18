@@ -45,8 +45,8 @@
 .set sc_HvxRevokeUpdate,                     0x65  # PLACEHOLDER; 
 .set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb  # UNCHECKED PLACEHOLDER;
 
-# Boot animation address (fixed mapping on KernelConfig_Debug.):
-.set BootAnimCodePageAddress,           0x98030000  # UNCHECKED;
+# Boot animation address (fixed mapping on KernelConfig_Debug, good address):
+.set BootAnimCodePageAddress,           0x98030000  # CHECKED;
 
 # XAM function addresses: 
 .set CreateFileA,                            0x8171b398  # CHECKED;
