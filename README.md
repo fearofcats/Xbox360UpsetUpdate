@@ -31,7 +31,7 @@ Addresses are compared directly between the 17559 and 17526 files using Ghidra.
 
 Address deltas are used only as hints. Every final value is manually checked against the corresponding function or instruction sequence before being marked as verified.
 
-A small Python tool may be used to apply the confirmed replacements, but it will not blindly shift every address by one global delta.
+~~A small Python tool may be used to apply the confirmed replacements, but it will not blindly shift every address by one global delta.~~ unreliable
 
 ## Building
 
@@ -43,7 +43,7 @@ Detailed build instructions will be added after the port has been completed and 
 
 This repository contains only my porting work, configuration files, notes, and related scripts.
 
-Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files by yourself. I'll explain how to do so later..
+~~Microsoft kernel, XAM, update, and decrypted HV files are not provided. You must obtain any required files by yourself.~~, Adding them as proof of concept if anyone wants to take a look, I'll explain how to get theses by yourself later (this means extracting them from any dashboard).
 
 ## Disclaimer
 
