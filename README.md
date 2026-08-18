@@ -9,8 +9,7 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange)
 ![Dashboard](https://img.shields.io/badge/dashboard-17526-blue)
-![Testing](https://img.shields.io/badge/hardware-untested-red)
-![Upstream](https://img.shields.io/badge/upstream-BadUpdate%20v1.2-purple)
+![Upstream](https://img.shields.io/badge/upstream-BadUpdate%20v1.2-green)
 
 ## Current Progress (sorted by priority.)
 
