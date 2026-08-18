@@ -81,12 +81,15 @@
 ###########################################################
 # XAM gadgets (byte pattern search):
 
-.set stack_pivot,                            0x00000000  # UNCHECKED was 0x81725378
-.set lwz_r3,                                 0x00000000  # UNCHECKED was 0x816ABA5C
-.set lwz_r3_stw_r4,                          0x00000000  # UNCHECKED was 0x817A27B0
-.set lwz_r10,                                0x00000000  # UNCHECKED was 0x8196C574
-.set lwz_r11_off_r31,                        0x00000000  # UNCHECKED was 0x816A8D94
-.set stw_r30_on_r31,                         0x00000000  # UNCHECKED was 0x816FCAAC
+.set stack_pivot,                            0x817247c8  # CHECKED was 0x81725378
+.set lwz_r3,                                 0x816AB91C  # CHECKED was 0x816ABA5C
+.set lwz_r3_stw_r4,                          0x817a1f78  # CHECKED was 0x817A27B0
+.set lwz_r10,                                0x8196bb54  # CHECKED was 0x8196C574
+.set lwz_r11_off_r31,                        0x81920924  # CHECKED was 0x816A8D94
+.set stw_r30_on_r31,                         0x816fc7f4  # CHECKED was 0x816FCAAC
+
+# just auto saving, still doing these 
+
 .set stw_r3_onto_pointer,                    0x00000000  # UNCHECKED was 0x81922120
 .set load_add_store_r10_r5_on_r11,           0x00000000  # UNCHECKED was 0x819D88A8
 .set call_func_preload,                      0x00000000  # UNCHECKED was 0x8169CDDC
