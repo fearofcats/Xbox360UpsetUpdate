@@ -17,7 +17,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [x] Created a 17526 kernel configuration
 * [x] Kernel gadgets and functions manually verified 
 * [x] Verify the remaining XAM functions and gadgets
-* [ ] Confirm the 17526 HV system-call ordinals
+* [x] ~~Confirm the 17526 HV system-call ordinals~~ placeholder for now, the HV didn't change as much as I thought?, code seems identical at a first glance.
 * [ ] Update the version-specific Stage 3 values
 * [ ] Update the version-specific Stage 4 values
 * [ ] Prepare the clean 17526 HV restore segment
