@@ -22,8 +22,8 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Update the version-specific Stage 4 values
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
-* [ ] Test on my hardware
-
+* [x] ~~Test on my hardware~~, sorta tested, I cannot debug anything as of now.
+ 
 ## Approach
 
 Addresses are compared directly between the 17559 and 17526 files using Ghidra.
