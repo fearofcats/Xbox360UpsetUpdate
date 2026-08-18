@@ -7,6 +7,9 @@ This is an unofficial side project made for research and learning. It is not aff
 > [!WARNING]
 > This port is **not finished or confirmed working**. Some values are still missing or unverified. Do not run the current files on real hardware, it is expected to freeze or fail. **This project DOES make the use of AI-assisted tools. Though every entry marked CHECKED is manually verified.**
 
+being tested as is currently, no major changes made to Stage 1, 2, 3 and 4 yet. 
+Notes: "Running Exploit" did not appear, instant freeze.
+
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange)
 ![Dashboard](https://img.shields.io/badge/dashboard-17526-blue)
 ![Upstream](https://img.shields.io/badge/upstream-BadUpdate%20v1.2-green)
@@ -21,7 +24,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
-* [ ] ~~Test on hardware~~, being tested as is currently, no major changes were made to Stage 1, 2, 3 and 4. Notes: "Running Exploit" did not appear, instant freeze.
+* [ ] Test on hardware
 
 # FAQ
 **Q: Why are you doing this?**  
