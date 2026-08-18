@@ -12,18 +12,20 @@ This is an unofficial side project made for research and learning. It is not aff
 ![Testing](https://img.shields.io/badge/hardware-untested-red)
 ![Upstream](https://img.shields.io/badge/upstream-BadUpdate%20v1.2-purple)
 
-## Current Progress
+## Current Progress (sorted by priority, crossed out means not applicable yet)
 
-* [x] Created a 17526 kernel configuration
-* [x] Kernel gadgets and functions manually verified 
-* [x] Verify the remaining XAM functions and gadgets
-* [x] ~~Confirm the 17526 HV system-call ordinals~~ placeholder for now, the HV didn't change as much as I thought?, code seems identical at a first glance.
+* [ ] Verify whether 17526's bootanim.xex addresses might've changed and if thats exploit terminating
+* [ ] Kernel gadgets and functions manually verified <- needs a sanity check
+* [ ] Verify the remaining XAM functions and gadgets <- uncertain, needs a sanity check/second opinion?
+* [ ] ~~Confirm the 17526 HV system-call ordinals~~ placeholder for now, the HV didn't change as much as I thought?, code seems identical at a first glance.
 * [ ] ~~Update the version-specific Stage 3 values~~ marked out baked addresses, might be better to mess with the c code instead?
 * [ ] ~~Update the version-specific Stage 4 values~~ marked out baked addresses
 * [ ] Prepare the clean 17526 HV restore segment
-* [X] Does it compile?
 * [ ] Build and inspect the completed binaries
-* [x] ~~Test on hardware~~, sorta tested, I cannot debug anything as of now. I don't own a modded console... compiled as is 08/17/2026, no changes were made to Stage 1, 2, 3 and 4. Notes: didn't get "Running Exploit" to appear, instant freeze.
+* [x] Created a 17526 kernel configuration
+* [x] ~~Test on hardware~~, tested as is, I cannot debug anything as of now. No modded console. 08/17/2026, no changes were made to Stage 1, 2, 3 and 4. Notes: "Running Exploit" did not appear, instant freeze.
+
+
 * [ ] Figure out how to compile BD 1.3?
 * [ ] Move configs over to 1.3
 * [ ] Port 1.3 aswell?
