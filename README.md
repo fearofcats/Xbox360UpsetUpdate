@@ -19,7 +19,8 @@ Early hardware test: the console froze before “Running Exploit” appeared. Th
 * [X] Sanity check 17526's bootanim.xex address
 * [X] Re-verify all kernel functions and gadgets
 * [X] Verify all XAM functions and gadgets
-* [ ] Research HV system-call ordinals
+* [X] Research HV system-call ordinals
+* [X] Verify HV system-call ordinals
 * [ ] Update the version-specific Stage 3 values 
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
