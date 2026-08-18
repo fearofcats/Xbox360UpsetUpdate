@@ -16,10 +16,11 @@ Early hardware test: the console froze before “Running Exploit” appeared. Th
 ## Current Progress (sorted by priority.)
 
 * [x] Created a 17526 kernel configuration
-* [ ] Verify whether 17526's bootanim.xex addresses might've changed and whether those differences prevent exploit execution
-* [ ] Re-verify all kernel functions and gadgets
+* [X] Sanity check 17526's bootanim.xex address
+* [X] Re-verify all kernel functions and gadgets
 * [X] Verify all XAM functions and gadgets
 * [ ] Research HV system-call ordinals
+* [ ] Update the version-specific Stage 3 values 
 * [ ] Update the version-specific Stage 4 values 
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
