@@ -87,7 +87,7 @@
 
 .set stack_pivot,                            0x817247D0  # UNCHECKED; was 0x81725378
 
-# TODO: unapplicable
+# TODO: 
 
    # .set lwz_r3,                                 0x816ACD1C  # UNRESOLVED; was 0x816ACE5C (17559); delta=-320; real 17559 gadget found manually, upstream value was stale/incorrect
    # .set lwz_r3,                                 0x816ab910  # UNRESOLVED; was 0x816ABA5C <<<< ????
@@ -99,7 +99,7 @@
 .set stw_r3_onto_pointer,                    0x819217C8  # UNCHECKED; was 0x81922120
 .set load_add_store_r10_r5_on_r11,           0x819D7858  # UNCHECKED; was 0x819D88A8
 
-# TODO: unapplicable
+# TODO: 
 
    # .set call_func_preload,                      0x8169E114  # UNRESOLVED; was 0x8169E1DC (17559); delta=-200; real 17559 gadget found manually, upstream value was stale/incorrect
    # .set call_func_preload,                      0x816d6050  # UNRESOLVED; was 0x8169CDDC <<<< ????
