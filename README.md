@@ -20,6 +20,8 @@ Early hardware test: the console froze before “Running Exploit” appeared. Th
 * [X] Re-verify all kernel functions and gadgets
 * [X] Verify all XAM functions and gadgets
 * [X] Verified 17526 syscall ordinals from kernel wrappers
+* [ ] Rebuild the save file for Rock Band Blitz somehow..
+* [ ] Fallback to Tony Hawk's American Wasteland. if ^ Doesn't work out 
 * [ ] Verify HV system-call ordinals
 * [ ] Update the version-specific Stage 3 values 
 * [ ] Update the version-specific Stage 4 values 
