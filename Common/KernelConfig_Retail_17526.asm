@@ -36,6 +36,8 @@
 # Boot animation address (fixed):
 .set BootAnimCodePageAddress,           0x90110000  # 0x98030000 
 
+# 0x90110000 is used to build Stage 3 for ABadAvatar 
+
 # XAM function addresses: 
 .set CreateFileA,                            0x8171b398
 .set GetFileSize,                            0x8171bc18
