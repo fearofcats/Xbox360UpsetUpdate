@@ -33,9 +33,12 @@
 .set sc_HvxRevokeUpdate,                     0x63 
 .set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb
 
-# Boot animation address (fixed):
-.set BootAnimCodePageAddress,           0x90110000  # 0x98030000 
+# Boot animation address :
+.set BootAnimCodePageAddress,          0x98030000 
 
+# plan is build Stage 2 first, then modify this file to include the ABadAvatar address to then build Stage 3, this shit is so jank
+
+# 0x98030000 is used to build Stage 2. 
 # 0x90110000 is used to build Stage 3 for ABadAvatar 
 
 # XAM function addresses: 
