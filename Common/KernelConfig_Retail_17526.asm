@@ -24,7 +24,7 @@
 .set memcmp,                                 0x80116870
 
 # System call ordinals, unsure unless stated otherwise
-.set sc_HvxPostOutputExploit,                0x0D 
+.set sc_HvxPostOutputExploit,                0x0D # VERIFIED
 .set sc_HvxFlushUserModeTb,                  0x1F # VERIFIED
 .set sc_HvxKeysExecute,                      0x40 
 .set sc_HvxEncryptedReserveAllocation,       0x47
