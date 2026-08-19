@@ -1,6 +1,6 @@
 ![banner](./peter-griffin-chris.gif)
 
-# Conclusion, Stage 1 uses hardcoded RAM addresses
+# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, I don't currently own a copy of Tony Hawk's American Wasteland for further testing. Consider this project closed
 
 Xbox360UpsetUpdate — 17526
 
