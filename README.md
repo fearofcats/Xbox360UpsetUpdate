@@ -17,7 +17,6 @@ Early hardware test: the console froze before “Running Exploit” appeared. Th
 
 * [ ] Migrate to ABadAvatar
 * [x] Created a 17526 kernel configuration
-* [X] Sanity check 17526's bootanim.xex address
 * [X] Re-verify all kernel functions and gadgets
 * [X] Verify all XAM functions and gadgets
 * [X] Verified 17526 syscall ordinals from kernel wrappers
