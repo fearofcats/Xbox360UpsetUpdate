@@ -25,7 +25,7 @@
 
 # System call ordinals, unsure unless stated otherwise
 .set sc_HvxPostOutputExploit,                0x0D 
-.set sc_HvxFlushUserModeTb,                  0x1F 
+.set sc_HvxFlushUserModeTb,                  0x1F # VERIFIED
 .set sc_HvxKeysExecute,                      0x40 
 .set sc_HvxEncryptedReserveAllocation,       0x47
 .set sc_HvxEncryptedEncryptAllocation,       0x48
