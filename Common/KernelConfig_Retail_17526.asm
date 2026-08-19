@@ -1,10 +1,6 @@
 # Ported from BadUpdate 17559 -> 17526
-
-# note to self; verify HV image next
+# note to self verify HV image next
 .set KRNL_VER, 17526
-
-# Kernel function addresses, sorted by original 17559 address.
-# For unchanged entries, the current address is also the 17559 sort key.
 
 .set HalSendSMCMessage,                      0x80067F48  # CHECKED; unchanged
 .set KeLockL2,                               0x80071E00  # CHECKED; unchanged
