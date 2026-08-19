@@ -1,6 +1,6 @@
 # Xbox360UpsetUpdate — 17526
 
-An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**. The current tree is based on BadUpdate v1.2, currently migrating to [ABadAvatar](https://github.com/shutterbug2000/ABadAvatar)
+An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**. The current tree is based on BadUpdate v1.2 and [ABadAvatar](https://github.com/shutterbug2000/ABadAvatar)
 
 This is an unofficial side project made for research and learning. It is not affiliated with or supported by the upstream developers.
 
@@ -9,17 +9,24 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Current Progress (in priority order)
 
-* [ ] Migrate to [ABadAvatar](https://github.com/shutterbug2000/ABadAvatar)
+* [ ] Complete [ABadAvatar] (https://github.com/shutterbug2000/ABadAvatar) migration
+* [ ] Verify whether Avatar addresses remained or changed, likely untouched
+* [ ] Figure out whatever Stage 3's deal is.. he's so scary
 * [x] Create a 17526 kernel configuration
-* [x] Re-verify all kernel functions and gadgets
+* [x] Verify all kernel functions and gadgets
 * [x] Verify all XAM functions and gadgets
-* [x] Verify 17526 syscall ordinals from kernel wrappers
+* [ ] Fix my abusive relationship with XAM addresses
 * [ ] Cross-check the syscall ordinals against the 17526 HV image
 * [ ] Update the version-specific Stage 3 values
 * [ ] Update the version-specific Stage 4 values
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
-* [ ] Test on hardware
+* [x] Initial hardware test — current build fails as of 08/18
+* [ ] Reach Stage 2
+* [ ] Reach Stage 3
+* [ ] Reach Stage 4
+* [ ] Completion
+* [ ] Wrap everything up and document findings
 
 # **Why are you doing this?**
 
