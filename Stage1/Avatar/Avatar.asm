@@ -1,4 +1,4 @@
-###########################################################
+###########################################################  
 # Avatar function addresses.
 
 # XTL functions:
@@ -6,7 +6,7 @@
 .set XSetThreadProcessor,                   0x921985A0
 
 
-###########################################################
+########################################################### UNCHECKED;
 # Avatar data addresses.
 .set RuntimeDataSegmentAddress,             0x43570000  # From the comically large allocation
 
@@ -17,6 +17,6 @@
 .set overwrite_loop_secondary_buffer_address_hardcoded,  0x43200000  # From the comically large allocation
 
 
-###########################################################
+########################################################### UNCHECKED;
 # Avatar item constants
 .set RawFileAddress,                        0x43AB9AC8  # Address of the gap data on the heap
