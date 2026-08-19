@@ -9,13 +9,13 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Current Progress (in priority order)
 
-* [ ] Complete [ABadAvatar] (https://github.com/shutterbug2000/ABadAvatar) migration
+* [ ] Complete Avatar migration
 * [ ] Verify whether Avatar addresses remained or changed, likely untouched
-* [ ] Figure out whatever Stage 3's deal is.. he's so scary
+* [ ] Figure out Stage 3
+* [ ] Final review for Stage 3 and Stage 4
 * [x] Create a 17526 kernel configuration
 * [x] Verify all kernel functions and gadgets
 * [x] Verify all XAM functions and gadgets
-* [ ] Fix my abusive relationship with XAM addresses
 * [ ] Cross-check the syscall ordinals against the 17526 HV image
 * [ ] Update the version-specific Stage 3 values
 * [ ] Update the version-specific Stage 4 values
