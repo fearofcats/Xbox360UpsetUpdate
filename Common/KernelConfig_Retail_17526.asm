@@ -89,12 +89,12 @@
 .set clamp_r3,                               0x817ef9bc  # CHECKED; was 0x817F030C
 .set mul_r3_4_lwzx_r11,                      0x816d86f0  # CHECKED; was 0x816D8864
 .set load_add_store_r11_r30_on_r31,          0x817f7488  # CHECKED; was 0x817F7DC8
-.set call_ptr_off_r31,                       0x819d7858  # CHECKED; was 0x81699DC8
+.set call_ptr_off_r31,                       0x81699d00  # CHECKED; was 0x81699DC8
 
 # These are constants, not addresses   unchanged:
 .set lwz_r3_stw_r4__r3_disp,           0
 .set lwz_r3_stw_r4__r4_disp,           8
-.set mul_r3_4_lwzx_r11__disp,          0x3D64
+.set mul_r3_4_lwzx_r11__disp,          0x3ae4
 .set load_add_store_r11_r30_on_r31__disp, 0x18
 .set cf_r3_def,                         0x29292929
 .set cf_r4_def,                         0x28282828
