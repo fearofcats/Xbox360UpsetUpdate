@@ -17,7 +17,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [x] Create a 17526 kernel configuration
 * [x] Verify all kernel functions and gadgets
 * [x] Verify all XAM functions and gadgets
-* [ ] Cross-check the syscall ordinals against the 17526 HV image
+* [x] Cross-check the syscall ordinals against the 17526 HV image
 * [ ] Update the version-specific Stage 3 values
 * [ ] Update the version-specific Stage 4 values
 * [ ] Prepare the clean 17526 HV restore segment
