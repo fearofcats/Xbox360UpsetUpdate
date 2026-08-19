@@ -9,6 +9,7 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Current Progress (in priority order)
 
+* [ ] stop coping
 * [x] Complete Avatar migration
 * [x] Build proper Avatar Stage 1 implementation for 17526
 * [ ] Double check whether Avatar changed addresses 
