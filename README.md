@@ -13,20 +13,20 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Completion:
 
-* [ ] Stop coping (hex editing pre-built Stage 1 Rock Band Blitz???)
+* [ ] Stop coping (hex editing pre-built Stage 1 Rock Band Blitz?)
 * [ ] Wrap everything up and document findings
 * [ ] Final review of everything? 
 
 ## Conclusion:
 
-* [x] Built a proper Avatar Stage 1 implementation for 17526
+* [x] Built and tested an Avatar Stage 1 candidate for 17526
 * [x] Confirmed Avatar has hardcoded addresses
-* [x] Confirmed Stage 1 is the current fail point
+* [x] Confirmed testing currently fails before Stage 2
 * [x] Created a 17526 kernel configuration
 * [x] Verified all kernel functions and gadgets
 * [x] Verified all XAM functions and gadgets
-* [x] Cross-check the syscall ordinals against the 17526 HV image
-* [x] A initial hardware test, exploit failed before Stage 2
+* [x] Cross-checked the syscall ordinals against the 17526 HV image
+* [x] An initial hardware test.
 
 ## Missing:
 
