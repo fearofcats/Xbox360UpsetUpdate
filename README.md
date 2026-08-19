@@ -1,5 +1,6 @@
 ![banner](./peter-griffin-chris.gif)
-documentation will be added soon, conclusion: having a modded console is infact needed to do this. 
+
+# Conclusion, Stage 1 uses hardcoded RAM addresses
 
 # Xbox360UpsetUpdate — 17526
 
