@@ -24,13 +24,13 @@
 .set memcmp,                                 0x80116870
 
 # System call ordinals, unsure unless stated otherwise
-.set sc_HvxPostOutputExploit,                0x00
-.set sc_HvxFlushUserModeTb,                  0x00
-.set sc_HvxKeysExecute,                      0x00
-.set sc_HvxEncryptedReserveAllocation,       0x00
-.set sc_HvxEncryptedEncryptAllocation,       0x00
-.set sc_HvxEncryptedReleaseAllocation,       0x00
-.set sc_HvxRevokeUpdate,                     0x00
+.set sc_HvxPostOutputExploit,                0x0D 
+.set sc_HvxFlushUserModeTb,                  0x1F 
+.set sc_HvxKeysExecute,                      0x40 
+.set sc_HvxEncryptedReserveAllocation,       0x47
+.set sc_HvxEncryptedEncryptAllocation,       0x48
+.set sc_HvxEncryptedReleaseAllocation,       0x4A
+.set sc_HvxRevokeUpdate,                     0x63
 .set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb
 
 # Boot animation address (fixed):
