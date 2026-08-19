@@ -7,8 +7,6 @@ This is an unofficial side project made for research and learning. It is not aff
 > [!WARNING]
 > This port is **not finished or confirmed working**. Some dashboard-specific values are still missing or unverified. Do not run the current files on real hardware; they are expected to freeze or fail. **AI-assisted tools have been used, but every entry marked `CHECKED` has been manually inspected.**
 
-Early hardware test: the console froze before “Running Exploit” appeared. This test occurred before the remaining porting work was completed and does not demonstrate compatibility.
-
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange)
 ![Dashboard](https://img.shields.io/badge/dashboard-17526-blue)
 ![Upstream](https://img.shields.io/badge/upstream-BadUpdate%20v1.2-green)
