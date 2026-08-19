@@ -9,8 +9,9 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Current Progress (in priority order)
 
-* [ ] Complete Avatar migration
-* [ ] Verify whether Avatar addresses remained or changed, likely untouched
+* [x] Complete Avatar migration
+* [x] Build proper Avatar Stage 1 implementation for 17526
+* [ ] Double check whether Avatar changed addresses 
 * [ ] Figure out Stage 3
 * [ ] Final review for Stage 3 and Stage 4
 * [x] Create a 17526 kernel configuration
@@ -21,8 +22,8 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Update the version-specific Stage 4 values
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
-* [x] Initial hardware test — current build fails Stage 1 as of 08/18,
-* [ ] Reach Stage 2
+* [x] Initial hardware test — current build fails Stage 2 as of 08/19,
+* [x] Reach Stage 2, currently failed Stage 2
 * [ ] Reach Stage 3
 * [ ] Reach Stage 4
 * [ ] Completion
