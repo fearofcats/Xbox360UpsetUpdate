@@ -23,7 +23,7 @@
 .set HvxKeysExGetKey,                        0x80107BF0
 .set memcmp,                                 0x80116870
 
-# System call ordinals, unsure unless stated otherwise
+# System call ordinals
 .set sc_HvxPostOutputExploit,                0x0D 
 .set sc_HvxFlushUserModeTb,                  0x1F 
 .set sc_HvxKeysExecute,                      0x40 
