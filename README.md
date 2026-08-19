@@ -2,7 +2,7 @@
 
 # Conclusion, Stage 1 uses hardcoded RAM addresses
 
-# Xbox360UpsetUpdate — 17526
+Xbox360UpsetUpdate — 17526
 
 An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**. The current tree is based on BadUpdate v1.2 and [ABadAvatar](https://github.com/shutterbug2000/ABadAvatar)
 
