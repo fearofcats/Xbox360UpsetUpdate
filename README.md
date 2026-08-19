@@ -23,7 +23,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
 * [x] Initial hardware test — current build fails Stage 2 as of 08/19,
-* [x] Reach Stage 2, currently failed Stage 2
+* [x] Reach Stage 2 
 * [ ] Reach Stage 3
 * [ ] Reach Stage 4
 * [ ] Completion
