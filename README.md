@@ -15,7 +15,7 @@ This is an unofficial side project made for research and learning. It is not aff
 
 * [x] stop coping
 * [x] Confirm Stage 1 is the current fail point
-* [ ] Wrap everything up and document findings
+* [x] Wrap everything up and document findings
 * [ ] final review of everything? 
 * [x] Complete Avatar migration
 * [x] Build proper Avatar Stage 1 implementation for 17526
