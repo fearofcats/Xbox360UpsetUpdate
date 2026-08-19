@@ -11,26 +11,31 @@ This is an unofficial side project made for research and learning. It is not aff
 > [!WARNING]
 > This port is **not finished or confirmed working**. Some dashboard-specific values are still missing or unverified. Running the current files on real hardware is expected to freeze or fail. **AI-assisted tools have been used.**
 
-## Current Progress (in priority order)
+## Completion:
 
-* [x] stop coping
-* [x] Confirm Stage 1 is the current fail point
-* [x] Wrap everything up and document findings
-* [ ] final review of everything? 
-* [x] Complete Avatar migration
-* [x] Build proper Avatar Stage 1 implementation for 17526
-* [x] Confirm Avatar has hardcoded addresses  
-* [ ] Figure out Stage 3
-* [ ] Final review for Stage 3 and Stage 4
-* [x] Create a 17526 kernel configuration
-* [x] Verify all kernel functions and gadgets
-* [x] Verify all XAM functions and gadgets
+* [ ] Stop coping (hex editing pre-built Stage 1 Rock Band Blitz???)
+* [ ] Wrap everything up and document findings
+* [ ] Final review of everything? 
+
+## Conclusion:
+
+* [x] Built a proper Avatar Stage 1 implementation for 17526
+* [x] Confirmed Avatar has hardcoded addresses
+* [x] Confirmed Stage 1 is the current fail point
+* [x] Created a 17526 kernel configuration
+* [x] Verified all kernel functions and gadgets
+* [x] Verified all XAM functions and gadgets
 * [x] Cross-check the syscall ordinals against the 17526 HV image
+* [x] A initial hardware test, exploit failed before Stage 2
+
+## Missing:
+
+* [ ] Research Stage 3
+* [ ] Final review for Stage 3 and Stage 4
 * [ ] Update the version-specific Stage 3 values
 * [ ] Update the version-specific Stage 4 values
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
-* [x] Initial hardware test — current build fails as of 08/19
 * [ ] Reach Stage 2
 * [ ] Reach Stage 3
 * [ ] Reach Stage 4
