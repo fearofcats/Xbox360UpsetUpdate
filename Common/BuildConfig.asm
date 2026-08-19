@@ -50,6 +50,9 @@
 .ifdef RB_BLITZ
     .include "RBBlitz.asm"
 .endif
+.ifdef AVATAR
+    .include "Avatar.asm"
+.endif
 
 # Sanity check the game config.
 .ifndef RuntimeDataSegmentAddress
