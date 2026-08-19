@@ -1,4 +1,4 @@
-# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, I don't currently own a copy of Tony Hawk's American Wasteland for further testing
+# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, One final theoretical Rock Band Blitz Stage 1 test remains.
 
 # Xbox360UpsetUpdate — 17526
 
