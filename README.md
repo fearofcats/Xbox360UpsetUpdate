@@ -1,12 +1,4 @@
-![banner](./peter-griffin-chris.gif)
-
-# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, I don't currently own a copy of Tony Hawk's American Wasteland for further testing. Consider this project closed until further notice
-
-# Casualties
-
-all of my 360's profiles and saves getting wiped because of windows jank, -10$ on bank account, hours of my time
-
-my thoughts?, i'd probably be better of doing an rgh blindfolded at gun point
+# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, I don't currently own a copy of Tony Hawk's American Wasteland for further testing
 
 # Xbox360UpsetUpdate — 17526
 
@@ -19,7 +11,7 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Completion:
 
-* [ ] Stop coping (hex editing pre-built Stage 1 Rock Band Blitz?)
+* [ ] Hex edit the pre-built Stage 1 Rock Band Blitz to patch 17526 in?
 * [ ] Wrap everything up and document findings
 * [ ] Final review of everything? 
 
