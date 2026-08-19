@@ -1,17 +1,11 @@
 # Ported from BadUpdate 17559 -> 17526
 
-# note to self; sanity check everything
+# note to self; verify HV image next
 .set KRNL_VER, 17526
 
 # Kernel function addresses, sorted by original 17559 address.
 # For unchanged entries, the current address is also the 17559 sort key.
 
-# ExFreePool, ExAllocatePoolWithTag, MmAllocatePhysicalMemory, XPhysicalAlloc are leftovers from a deprecated automation tool, unless stated otherwise, not used.
-
-# .set ExFreePool,                             0x80064768  # NOT USED;  unchanged
-# .set ExAllocatePoolWithTag,                  0x80064A60  # NOT USED;  unchanged
-# .set MmAllocatePhysicalMemory,               0x80080200  # NOT USED;  was 0x80080AB0
-# .set XPhysicalAlloc,                         0x80080470  # NOT USED;  was 0x80080D20
 .set HalSendSMCMessage,                      0x80067F48  # CHECKED; unchanged
 .set KeLockL2,                               0x80071E00  # CHECKED; unchanged
 .set KeStallExecutionProcessor,              0x80073484  # CHECKED; unchanged
@@ -43,25 +37,25 @@
 .set sc_HvxEncryptedEncryptAllocation,       0x48  # CHECKED; 
 .set sc_HvxEncryptedReleaseAllocation,       0x4A  # CHECKED; 
 .set sc_HvxRevokeUpdate,                     0x63  # CHECKED; 
-.set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb  # UNCHECKED, should be good to go though;
+.set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb  # UNCHECKED;
 
-# Boot animation address (fixed mapping on KernelConfig_Debug, good address):
+# Boot animation address (fixed):
 .set BootAnimCodePageAddress,           0x98030000  # CHECKED;
 
 # XAM function addresses: 
-.set CreateFileA,                            0x8171b398  # CHECKED;
-.set GetFileSize,                            0x8171bc18  # CHECKED;
-.set ReadFile,                               0x8171C718  # CHECKED;
-.set WriteFile,                              0x817216C0  # CHECKED;
-.set CloseHandle,                            0x8171AE00  # CHECKED;
-.set CreateThread,                           0x8171b608  # CHECKED;
-.set ResumeThread,                           0x8171C8F0  # CHECKED;
-.set GetLastError,                           0x81720f18  # CHECKED;
-.set XamLoaderLaunchTitle,                   0x816A1728  # CHECKED;
-.set XamLoaderTerminateTitle,                0x816A1360  # CHECKED;
+.set CreateFileA,                            0x8171b398  # CHECKED; was 0x8171BF40
+.set GetFileSize,                            0x8171bc18  # CHECKED; was 0x8171C7C0
+.set ReadFile,                               0x8171C718  # CHECKED; was 0x8171D2C0
+.set WriteFile,                              0x817216C0  # CHECKED; was 0x81722268
+.set CloseHandle,                            0x8171AE00  # CHECKED; was 0x8171B9A8
+.set CreateThread,                           0x8171b608  # CHECKED; was 0x8171C1B0
+.set ResumeThread,                           0x8171C8F0  # CHECKED; was 0x8171D498
+.set GetLastError,                           0x81720f18  # CHECKED; was 0x81721AC0
+.set XamLoaderLaunchTitle,                   0x816A1728  # CHECKED; was 0x816A1820
+.set XamLoaderTerminateTitle,                0x816A1360  # CHECKED; was 0x816A1458
 .set XLaunchNewImage,                        XamLoaderLaunchTitle  # CHECKED;
-.set memcpy,                                 0x8172cba0  # CHECKED;
-.set memset,                                 0x8172cb00  # CHECKED;
+.set memcpy,                                 0x8172cba0  # CHECKED; was 0x8172D590
+.set memset,                                 0x8172cb00  # CHECKED; was 0x8172D4F0
 
 ###########################################################
 # Kernel gadgets :
