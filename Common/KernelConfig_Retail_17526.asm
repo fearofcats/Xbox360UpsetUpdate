@@ -34,7 +34,7 @@
 .set sc_HvxArbWriteSyscall,              sc_HvxFlushUserModeTb
 
 # Boot animation address (fixed):
-.set BootAnimCodePageAddress,           0x98030000  # CHECKED;
+.set BootAnimCodePageAddress,           0x90110000  # 0x98030000 
 
 # XAM function addresses: 
 .set CreateFileA,                            0x8171b398
