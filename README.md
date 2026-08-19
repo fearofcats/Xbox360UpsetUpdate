@@ -2,7 +2,13 @@
 
 # Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, I don't currently own a copy of Tony Hawk's American Wasteland for further testing. Consider this project closed until further notice
 
-Xbox360UpsetUpdate — 17526
+# Casualties
+
+all of my 360's profiles and saves getting wiped because of windows jank, -10$ on bank account, hours of my time
+
+my thoughts?, i'd probably be better of doing an rgh blindfolded at gun point
+
+# Xbox360UpsetUpdate — 17526
 
 An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**. The current tree is based on BadUpdate v1.2 and [ABadAvatar](https://github.com/shutterbug2000/ABadAvatar)
 
