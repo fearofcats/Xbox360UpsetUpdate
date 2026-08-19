@@ -10,11 +10,13 @@ This is an unofficial side project made for research and learning. It is not aff
 ## Current Progress (in priority order)
 
 * [ ] stop coping
+* [ ] Confirm Stage 1 is the current fail point
+* [ ] Confirm Stage 2 is the current fail point
+* [ ] Wrap everything up and document findings
+* [ ] final review of everything? 
 * [x] Complete Avatar migration
 * [x] Build proper Avatar Stage 1 implementation for 17526
-* [ ] Confirm whether Stage 1 does anything???
-* [ ] Confirm Stage 2 is indeed the fail point
-* [ ] Double check whether Avatar changed addresses 
+* [x] Confirm Avatar has hardcoded addresses  
 * [ ] Figure out Stage 3
 * [ ] Final review for Stage 3 and Stage 4
 * [x] Create a 17526 kernel configuration
@@ -26,11 +28,10 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
 * [x] Initial hardware test — current build fails as of 08/19
-* [x] Reached Stage 2??? 
+* [ ] Reach Stage 2
 * [ ] Reach Stage 3
 * [ ] Reach Stage 4
 * [ ] Completion
-* [ ] Wrap everything up and document findings
 
 # **Why are you doing this?**
 
