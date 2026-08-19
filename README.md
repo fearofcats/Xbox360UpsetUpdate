@@ -9,9 +9,8 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Current Progress (in priority order)
 
-* [ ] stop coping
-* [ ] Confirm Stage 1 is the current fail point
-* [ ] Confirm Stage 2 is the current fail point
+* [x] stop coping
+* [x] Confirm Stage 1 is the current fail point
 * [ ] Wrap everything up and document findings
 * [ ] final review of everything? 
 * [x] Complete Avatar migration
