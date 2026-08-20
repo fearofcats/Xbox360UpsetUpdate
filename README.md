@@ -1,4 +1,4 @@
-# Conclusion, Rock Band Blitz Stage 1 patch confirmed
+# Conclusion, Rock Band Blitz Stage 1 patch confirmed, currently Stage 2 fails
 ![banner](./content.png)
 
 # Xbox360UpsetUpdate — 17526
@@ -8,7 +8,7 @@ An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https:/
 This is an unofficial side project made for research and learning. It is not affiliated with or supported by the upstream developers.
 
 > [!WARNING]
-> This port is **not finished or confirmed working**. Some dashboard-specific values are still missing or unverified. Running the current files on real hardware is expected to freeze or fail. **AI-assisted tools have been used.**
+> This port is **not finished or confirmed working**. Running the current files on real hardware is expected to freeze or fail. **AI-assisted tools have been used.**
 
 ## Current Progress
 
