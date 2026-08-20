@@ -1,4 +1,4 @@
-# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, One final theoretical Rock Band Blitz Stage 1 test remains.
+~~# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, One final theoretical Rock Band Blitz Stage 1 test remains.~~ needs re-testing
 
 # Xbox360UpsetUpdate — 17526
 
@@ -17,17 +17,14 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Conclusion:
 
-* [x] Built and tested an Avatar Stage 1 candidate for 17526
-* [x] Confirmed Avatar has hardcoded addresses
-* [x] Confirmed testing currently fails before Stage 2
+* [ ] Built and tested an Avatar Stage 1 candidate for 17526
+* [ ] Confirmed Avatar has hardcoded addresses ???
+* [ ] Confirmed testing currently fails before Stage 2
 * [x] Created a 17526 kernel configuration
 * [x] Verified all kernel functions and gadgets
 * [x] Verified all XAM functions and gadgets
 * [x] Cross-checked the syscall ordinals against the 17526 HV image
 * [x] An initial hardware test.
-
-## Missing:
-
 * [ ] Research Stage 3
 * [ ] Final review for Stage 3 and Stage 4
 * [ ] Update the version-specific Stage 3 values
