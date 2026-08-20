@@ -31,7 +31,7 @@
 ###########################################################
 # Include kernel config for specified platform.
 .ifdef RETAIL_BUILD
-    .include "KernelConfig_Retail_17526.asm"
+    .include "KernelConfig_Retail_17559.asm"
 .else
     .include "KernelConfig_Debug.asm"
 .endif
@@ -49,9 +49,6 @@
 .endif
 .ifdef RB_BLITZ
     .include "RBBlitz.asm"
-.endif
-.ifdef AVATAR
-    .include "Avatar.asm"
 .endif
 
 # Sanity check the game config.
