@@ -1,4 +1,4 @@
-~~# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, One final theoretical Rock Band Blitz Stage 1 test remains.~~ needs re-testing
+# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, One final theoretical Rock Band Blitz Stage 1 patch hack shenanigan needs to be confirmed impossible.
 
 # Xbox360UpsetUpdate — 17526
 
