@@ -1,6 +1,4 @@
-# Conclusion, ABadAvatar Stage 1 uses hardcoded RAM addresses, One final theoretical Rock Band Blitz Stage 1 patch hack shenanigan needs to be confirmed impossible.
-
-# skateboarding gods PLEASE bro answer my prayers, FINE, I WILL BUY YOUR GAME TONY HAWK, I HATE YOU. THE PHYSICS BETTER BE DEVELOPED BY JESUS HIMSELF.
+# Conclusion, One final theoretical Rock Band Blitz Stage 1 patch needs to be confirmed impossible.
 
 # Xbox360UpsetUpdate — 17526
 
