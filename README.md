@@ -1,4 +1,5 @@
-# Conclusion, One final theoretical Rock Band Blitz Stage 1 patch needs to be confirmed impossible.
+# Conclusion, Rock Band Blitz Stage 1 patch confirmed
+![banner](./content.png)
 
 # Xbox360UpsetUpdate — 17526
 
@@ -9,14 +10,9 @@ This is an unofficial side project made for research and learning. It is not aff
 > [!WARNING]
 > This port is **not finished or confirmed working**. Some dashboard-specific values are still missing or unverified. Running the current files on real hardware is expected to freeze or fail. **AI-assisted tools have been used.**
 
-## Completion:
+## Current Progress
 
-* [ ] Hex edit the pre-built Stage 1 Rock Band Blitz to patch 17526 in?
-* [ ] Wrap everything up and document findings
-* [ ] Final review of everything? 
-
-## Conclusion:
-
+* [x] Successfully Hex edited the pre-built Stage 1 Rock Band Blitz to patch 17526 in
 * [x] Built and tested an Avatar Stage 1 candidate for 17526, fail
 * [x] Confirmed Avatar has hardcoded addresses
 * [x] Confirmed testing currently fails before Stage 2
@@ -35,6 +31,8 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Reach Stage 3
 * [ ] Reach Stage 4
 * [ ] Completion
+* [ ] Wrap everything up and document findings
+* [ ] Final review of everything? 
 
 # **Why are you doing this?**
 
