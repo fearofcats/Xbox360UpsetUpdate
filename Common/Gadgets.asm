@@ -21,7 +21,7 @@
 #
 #       Keep in mind this ONLY works once, trying to reuse _memcpy_cipher_text_offset_1 and assign it another value later
 #       on (say for a second invocation of the MEMCPY_CIPHER_TEXT macro) will cause ALL instances of its use to be updated
-#       fearofcats note: HOLY SHIT am I fucking dumb?
+#       fearofcats note: yes pretty dumb, brain fart 17559 > 17526 conversion still applies at line 1027 original address: 0x818CB880 
 
 
 ###########################################################
@@ -1024,7 +1024,7 @@
         .fill   0x58, 1, 0x00
         .long   0x00000000, 0x99FF0000              # r30 - color command value
         .long   0x31313131, 0x31313131              # r31
-        .long   0x818CB880                          # lr
+        .long   0x818CAE60                          # lr
         .long   0x00000000
         
         ###########################################################
