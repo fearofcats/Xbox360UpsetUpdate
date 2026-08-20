@@ -3,7 +3,7 @@
 
 # Xbox360UpsetUpdate — 17526
 
-An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**. The current tree is based on BadUpdate v1.2 and [ABadAvatar](https://github.com/shutterbug2000/ABadAvatar)
+An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**. The current tree is based on BadUpdate v1.2
 
 This is an unofficial side project made for research and learning. It is not affiliated with or supported by the upstream developers.
 
@@ -13,9 +13,6 @@ This is an unofficial side project made for research and learning. It is not aff
 ## Current Progress
 
 * [x] Successfully Hex edited the pre-built Stage 1 Rock Band Blitz to patch 17526 in
-* [x] Built and tested an Avatar Stage 1 candidate for 17526, fail
-* [x] Confirmed Avatar has hardcoded addresses
-* [x] Confirmed testing currently fails before Stage 2
 * [x] Created a 17526 kernel configuration
 * [x] Verified all kernel functions and gadgets
 * [x] Verified all XAM functions and gadgets
@@ -32,7 +29,12 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Reach Stage 4
 * [ ] Completion
 * [ ] Wrap everything up and document findings
-* [ ] Final review of everything? 
+* [ ] Final review of everything?
+
+## fails
+
+* [x] Built and tested an Avatar Stage 1 candidate for 17526, fail
+* [x] Confirmed Avatar has hardcoded addresses
 
 # **Why are you doing this?**
 
