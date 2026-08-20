@@ -28,13 +28,6 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Reach Stage 3
 * [ ] Reach Stage 4
 * [ ] Completion
-* [ ] Wrap everything up and document findings
-* [ ] Final review of everything?
-
-## fails
-
-* [x] Built and tested an Avatar Stage 1 candidate for 17526, fail
-* [x] Confirmed Avatar has hardcoded addresses
 
 # **Why are you doing this?**
 
@@ -44,11 +37,10 @@ This is a personal research project for getting BadUpdate working on my own spec
 
 This repository contains my porting work, the inherited upstream source, configuration files, and reference files used during address comparison.
 
-The `Binaries/` directory contains the 17526 and 17559 files used for comparison in Ghidra. These are research inputs, not finished release files. I plan to document how to reproduce the analysis setup later.
+The `Binaries/` directory contains the 17526 and 17559 files used for comparison in Ghidra. These are research inputs.
 
 ## Credits
 
 * [Grimdoomer](https://github.com/grimdoomer) — original Xbox360BadUpdate project and research
-* [Shutterbug2000](https://github.com/shutterbug2000) — ABadAvatar project
 * [InvoxiPlayGames](https://github.com/InvoxiPlayGames) — Rock Band Blitz entry-point work
 * Everyone who documented Xbox 360 internals and made this kind of research possible.
