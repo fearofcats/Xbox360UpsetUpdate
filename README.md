@@ -1,4 +1,4 @@
-# Conclusion, Rock Band Blitz Stage 1 patch confirmed, currently Stage 2 fails
+# Conclusion, Rock Band Blitz Stage 1 patch confirmed, currently Stage 2 fails, project goes on.
 ![banner](./content.png)
 
 # Xbox360UpsetUpdate — 17526
