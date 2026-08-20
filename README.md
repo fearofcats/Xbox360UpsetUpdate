@@ -1,4 +1,4 @@
-# Conclusion, Rock Band Blitz Stage 1 patch confirmed, currently Stage 2 fails, project goes on.
+# Conclusion, Rock Band Blitz Stage 1 patch confirmed, currently EARLY Stage 2 fails, Stage 3 is substantially reached
 ![banner](./content.png)
 
 # Xbox360UpsetUpdate — 17526
@@ -25,7 +25,7 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Prepare the clean 17526 HV restore segment
 * [ ] Build and inspect the completed binaries
 * [x] Reach Stage 2
-* [ ] Reach Stage 3
+* [x] Reach Stage 3
 * [ ] Reach Stage 4
 * [ ] Completion
 
