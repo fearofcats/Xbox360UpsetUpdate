@@ -17,9 +17,9 @@ This is an unofficial side project made for research and learning. It is not aff
 
 ## Conclusion:
 
-* [ ] Built and tested an Avatar Stage 1 candidate for 17526
-* [ ] Confirmed Avatar has hardcoded addresses ???
-* [ ] Confirmed testing currently fails before Stage 2
+* [x] Built and tested an Avatar Stage 1 candidate for 17526, fail
+* [x] Confirmed Avatar has hardcoded addresses
+* [x] Confirmed testing currently fails before Stage 2
 * [x] Created a 17526 kernel configuration
 * [x] Verified all kernel functions and gadgets
 * [x] Verified all XAM functions and gadgets
