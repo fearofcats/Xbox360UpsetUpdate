@@ -1,4 +1,4 @@
-# Rock Band Blitz Stage 1 patch confirmed. Execution reaches Stage 2 and proceeds substantially into Stage 3, whose values haven't yet been updated for 17526.
+# Execution reaches Stage 2 and proceeds substantially into Stage 3, whose values haven't yet been updated for 17526.
 ![banner](./content.png)
 
 # UpsetUpdate
