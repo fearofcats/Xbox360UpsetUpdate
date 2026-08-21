@@ -1,14 +1,12 @@
-# Conclusion, Rock Band Blitz Stage 1 patch confirmed, currently EARLY Stage 2 fails, Stage 3 is substantially reached
+# Rock Band Blitz Stage 1 patch confirmed, early Stage 2 fails because it calls Stage 3 right after, and it's values havent been updated for 17526, Stage 3 is substantially reached to a degree
 ![banner](./content.png)
 
-# Xbox360UpsetUpdate — 17526
+# UpsetUpdate
 
-An experimental work-in-progress port of [Grimdoomer's Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) from dashboard **17559** to **17526**. The current tree is based on BadUpdate v1.2
-
-This is an unofficial side project made for research and learning. It is not affiliated with or supported by the upstream developers.
+A personal attempt at porting BadUpdate to Xbox 360 kernel 17526. That's pretty much it. This repository is my workbench for figuring out how much 17559-specific bullshit needs to be changed before my weird Xbox 360 will cooperate
 
 > [!WARNING]
-> This port is **not finished or confirmed working**. Running the current files on real hardware is expected to freeze or fail. **AI-assisted tools have been used.**
+> This port is **not finished or confirmed working**. **AI has been used.**
 
 ## Current Progress
 
@@ -30,15 +28,11 @@ This is an unofficial side project made for research and learning. It is not aff
 * [ ] Build a XeUnshackle 17526 Port
 * [ ] Completion
 
-# **Why are you doing this?**
-
-This is a personal research project for getting BadUpdate working on my own specific Xbox 360 setup. I’m publishing the work because it may be useful as reference, but it is not intended to be a polished or universally compatible solution.
-
 ## Repository Contents
 
-This repository contains my porting work, the inherited upstream source, configuration files, and reference files used during address comparison.
-
 The `Binaries/` directory contains the 17526 and 17559 files used for comparison in Ghidra. These are research inputs.
+
+The `Tools/` directory contains Grimdoomer's XePatcher 3.1.
 
 ## Credits
 
