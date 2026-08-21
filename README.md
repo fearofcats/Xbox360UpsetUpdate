@@ -8,7 +8,7 @@ A personal attempt at porting BadUpdate to Xbox 360 kernel version 17526. That's
 > [!WARNING]
 > This port is **not finished or confirmed working.** **AI has been used.**
 
-Current Progress
+## Current Progress
 
 * [x] Successfully hex-edited the prebuilt Rock Band Blitz Stage 1 for 17526
 * [x] Created a 17526 kernel configuration
@@ -16,17 +16,15 @@ Current Progress
 * [x] Verified all XAM functions and gadgets
 * [x] Cross-checked the syscall ordinals against the 17526 HV image
 * [x] Completed an initial hardware test
+* [x] Reach Stage 2/3
 * [ ] Research Stage 3
-* [ ] Final review for Stage 3 and Stage 4
 * [ ] Update the version-specific Stage 3 values
 * [ ] Update the version-specific Stage 4 values
 * [ ] Prepare the clean 17526 HV restore segment
-* [ ] Build and inspect the completed binaries
-* [x] Reach Stage 2
-* [x] Reach Stage 3
+* [ ] Final review for Stage 3 and Stage 4
+* [ ] Build and test the final binaries
 * [ ] Reach Stage 4
-* [ ] Build a XeUnshackle port for 17526
-* [ ] Completion
+* [ ] Fork XeUnshackle and port it to 17526
 
 ## Repository Contents
 
