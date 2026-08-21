@@ -1,13 +1,13 @@
-Rock Band Blitz Stage 1 patch confirmed. Execution reaches Stage 2 and proceeds substantially into Stage 3, whose values haven't yet been updated for 17526.
+# Rock Band Blitz Stage 1 patch confirmed. Execution reaches Stage 2 and proceeds substantially into Stage 3, whose values haven't yet been updated for 17526.
 
 ![banner](./content.png)
 
-UpsetUpdate
+# UpsetUpdate
 
 A personal attempt at porting BadUpdate to Xbox 360 kernel version 17526. That's pretty much it. This repository is my workbench for figuring out how much 17559-specific bullshit needs to be changed before my weird Xbox 360 will cooperate.
 
-«[!WARNING]
-This port is not finished or confirmed working. AI has been used.»
+>[!WARNING]
+>This port is not finished or confirmed working. AI has been used.»
 
 Current Progress
 
@@ -29,14 +29,14 @@ Current Progress
 * [ ] Build a XeUnshackle port for 17526
 * [ ] Completion
 
-Repository Contents
+## Repository Contents
 
-The "Binaries/" directory contains the 17526 and 17559 files used for comparison in Ghidra. These are research inputs.
+The `Binaries/` directory contains the 17526 and 17559 files used for comparison in Ghidra. These are research inputs.
 
-The "Tools/" directory contains Grimdoomer's XePatcher 3.1.
+The `Tools/` directory contains Grimdoomer's XePatcher 3.1.
 
-Credits
+## Credits
 
-* "Grimdoomer" (https://github.com/grimdoomer) — original Xbox360BadUpdate project and research
-* "InvoxiPlayGames" (https://github.com/InvoxiPlayGames) — Rock Band Blitz entry-point work
+* [Grimdoomer](https://github.com/grimdoomer) — original Xbox360BadUpdate project and research
+* [InvoxiPlayGames](https://github.com/InvoxiPlayGames) — Rock Band Blitz entry-point work
 * Everyone who documented Xbox 360 internals and made this kind of research possible.
