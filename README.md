@@ -1,30 +1,20 @@
-# Execution reaches Stage 2 and proceeds substantially into Stage 3, whose values haven't yet been updated for 17526.
+# Stage 3 needs work for 17526.
 ![banner](./content.png)
 
-# UpsetUpdate
-
-A personal attempt at porting BadUpdate to Xbox 360 kernel version 17526.
-
 > [!WARNING]
-> This port is **not finished or confirmed working.** **AI has been used.**
+> Not finished. **AI used.**
 
-## Current Progress
-
-* [x] Successfully hex-edited the prebuilt Rock Band Blitz Stage 1 for 17526
-* [x] Created a 17526 kernel configuration
-* [x] Verified all kernel and XAM functions and gadgets
-* [x] Cross-checked the syscall ordinals against the 17526 HV image
+* [x] Hex-edited the prebuilt Rock Band Blitz Stage 1 for 17526
+* [x] Verified kernel and XAM functions and gadgets
+* [x] Cross-checked the syscall ordinals
 * [x] Reach Stage 2/3
-* [ ] Update the version-specific Stage 3 values
-* [ ] Update the version-specific Stage 4 values
-* [ ] Prepare the clean 17526 HV restore segment
-* [ ] Final review for Stage 3 and Stage 4
-* [ ] Build and test the final binaries
+* [ ] Update Stage 3 values
+* [ ] Update Stage 4 values
+* [ ] Prepare 17526 HV restore segment
 * [ ] Reach Stage 4
-* [ ] Fork XeUnshackle and port it to 17526
+* [ ] Port XeUnshackle to 17526
 
 ## Credits
 
-* [Grimdoomer](https://github.com/grimdoomer) — original Xbox360BadUpdate project and research
-* [InvoxiPlayGames](https://github.com/InvoxiPlayGames) — Rock Band Blitz entry-point work
-* Everyone who documented Xbox 360 internals and made this kind of research possible.
+* [Grimdoomer](https://github.com/grimdoomer) — original Xbox360BadUpdate project.
+* [InvoxiPlayGames](https://github.com/InvoxiPlayGames) — Rock Band Blitz entry-point.
