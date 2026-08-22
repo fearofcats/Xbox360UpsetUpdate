@@ -1,4 +1,4 @@
-# Stage 3 needs work for 17526.
+# Stage 3 needs work for 17526. Freezes 4 minutes~ in
 ![banner](./content.png)
 
 > [!WARNING]
