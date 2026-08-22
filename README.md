@@ -8,7 +8,8 @@
 * [x] Verified kernel and XAM functions and gadgets
 * [x] Cross-checked the syscall ordinals
 * [x] Reach Stage 2/3
-* [ ] Update Stage 3 values
+* [x] Update Stage 3 values
+* [ ] Update xke_update and update_data values?
 * [ ] Update Stage 4 values
 * [ ] Prepare 17526 HV restore segment
 * [ ] Reach Stage 4
