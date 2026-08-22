@@ -1,4 +1,4 @@
-# Stage 3 needs work for 17526. Freezes 2 minutes~ in
+# Stage 2 confirmed; transition toward Stage 3 reached; Stage 3 not confirmed. Freezes 2 minutes~ in
 ![banner](./content.png)
 
 > [!WARNING]
