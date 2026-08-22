@@ -81,11 +81,11 @@
 .set mr_r1_to_r3,                            0x817f4584
 .set blr_nop,                                0x817f4588
 .set clamp_r3,                               0x817ef9bc
-.set mul_r3_4_lwzx_r11,                      0x816d86f0
+.set mul_r3_4_lwzx_r11,                      0x816d86dc # oh my god
 .set load_add_store_r11_r30_on_r31,          0x817f7488
 .set call_ptr_off_r31,                       0x81699d00
 
-# These are constants, not addresses   unchanged:
+# These are constants:
 .set lwz_r3_stw_r4__r3_disp,           0
 .set lwz_r3_stw_r4__r4_disp,           8
 .set mul_r3_4_lwzx_r11__disp,          0x3ae4
