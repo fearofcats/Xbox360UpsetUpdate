@@ -1,12 +1,11 @@
-bin/
 Tools/
-.vs/
 
 *.bin
 *.exe
 *.xdb
 *.xex
 *.idb
+*.elf
 
 # Special files to include:
 !Stage4_CleanHvData_Retail_17559.bin

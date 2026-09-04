@@ -31,9 +31,9 @@
 ###########################################################
 # Include kernel config for specified platform.
 .ifdef RETAIL_BUILD
-    .include "KernelConfig_Retail_17559.asm"
+    .include "KernelConfig_Retail_17526.asm"
 .else
-    .error "No buld config for debug target defined"
+    .include "KernelConfig_Debug.asm"
 .endif
 
 # Make sure the kernel version is specified which indicates the kernel address file was included.
@@ -46,8 +46,9 @@
 # Include game config for specified target.
 .ifdef TONY_HAWK_AW
     .include "TonyHawk.asm"
-#.elseif ?? != 0
-
+.endif
+.ifdef RB_BLITZ
+    .include "RBBlitz.asm"
 .endif
 
 # Sanity check the game config.

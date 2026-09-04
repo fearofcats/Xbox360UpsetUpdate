@@ -4,7 +4,6 @@
 
 # XTL functions:
 .set XPhysicalAlloc,                        0x822DA430
-.set XPhysicalFree,                         0x822DA4B8
 .set XSetThreadProcessor,                   0x822DA2E0
 
 

