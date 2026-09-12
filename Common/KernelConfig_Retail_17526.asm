@@ -53,7 +53,7 @@
 
 .set CreateThread,                      0x8171b608  # Export 1084
 .set ResumeThread,                      0x8171c8f0  # Export 1085
-.set GetLastError,                      0x8171bce0  # Export 1006
+.set GetLastError,                      0x81720F18
 
 .set memcpy,                            0x8172CBA0
 .set memset,                            0x8172CB00  
