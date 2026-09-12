@@ -26,8 +26,8 @@
 .set HvxKeysExGetKey,                   0x80107BF0
 .set HvxKeysExSetKey,                   0x80107BE0
 .set HvxEncryptedReserveAllocation,     0x80082420
-.set HvxEncryptedReleaseAllocation,     0x80082430
-.set HvxEncryptedEncryptAllocation,     0x80082450
+.set HvxEncryptedReleaseAllocation,     0x80082450
+.set HvxEncryptedEncryptAllocation,     0x80082430
 .set HvxFlushDCacheRange,               0x8007F0B8
 
 # System call ordinals:
